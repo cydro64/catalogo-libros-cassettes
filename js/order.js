@@ -6,7 +6,7 @@ const formatoPrecioPedido = new Intl.NumberFormat('es-CL', {
 
 const generarMensajeWhatsApp = (carrito, total) => {
   if (!carrito || carrito.length === 0) {
-    return 'https://wa.me/';
+    return 'https://wa.me/56976449957';
   }
 
   const detalle = carrito
@@ -22,7 +22,7 @@ const generarMensajeWhatsApp = (carrito, total) => {
     total,
   )}`;
 
-  return `https://wa.me/?text=${encodeURIComponent(mensaje)}`;
+  return `https://wa.me/56976449957?text=${encodeURIComponent(mensaje)}`;
 };
 
 window.generarMensajeWhatsApp = generarMensajeWhatsApp;
