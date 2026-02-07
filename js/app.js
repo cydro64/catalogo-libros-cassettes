@@ -1,5 +1,10 @@
 const productosContainer = document.getElementById('productos');
 const filtrosSection = document.getElementById('filtros');
+const listaCarrito = document.getElementById('lista-carrito');
+const totalCarrito = document.getElementById('total-carrito');
+const vaciarCarritoBtn = document.getElementById('vaciar-carrito');
+const enviarPedidoBtn = document.getElementById('enviar-pedido');
+const carritoError = document.getElementById('carrito-error');
 
 const formatoPrecio = new Intl.NumberFormat('es-CL', {
   style: 'currency',
@@ -64,6 +69,92 @@ const filtrarProductos = () =>
     return coincideCategoria && coincideBusqueda;
   });
 
+const construirDetalleCarrito = () => {
+  if (!window.cart) {
+    return { detalle: [], total: 0 };
+  }
+
+  const items = window.cart.obtenerCarrito();
+
+  const detalle = items
+    .map((item) => {
+      const producto = productos.find((entry) => entry.id === item.id);
+      if (!producto) {
+        return null;
+      }
+      return {
+        id: item.id,
+        nombre: producto.nombre,
+        cantidad: item.cantidad,
+        precio_clp: producto.precio_clp,
+      };
+    })
+    .filter(Boolean);
+
+  const total = detalle.reduce(
+    (acc, item) => acc + item.precio_clp * item.cantidad,
+    0,
+  );
+
+  return { detalle, total };
+};
+
+const actualizarEstadoEnvio = (detalle, total) => {
+  const carritoVacio = detalle.length === 0;
+  enviarPedidoBtn.setAttribute('aria-disabled', carritoVacio);
+  enviarPedidoBtn.classList.toggle('deshabilitado', carritoVacio);
+  enviarPedidoBtn.tabIndex = carritoVacio ? -1 : 0;
+
+  if (carritoVacio) {
+    enviarPedidoBtn.href = 'https://wa.me/';
+    return;
+  }
+
+  if (window.generarMensajeWhatsApp) {
+    enviarPedidoBtn.href = window.generarMensajeWhatsApp(detalle, total);
+  }
+};
+
+const renderCarrito = () => {
+  if (!listaCarrito || !totalCarrito) {
+    return;
+  }
+
+  listaCarrito.innerHTML = '';
+  const { detalle, total } = construirDetalleCarrito();
+
+  if (detalle.length === 0) {
+    const mensaje = document.createElement('li');
+    mensaje.textContent = 'Tu carrito está vacío.';
+    listaCarrito.appendChild(mensaje);
+  } else {
+    detalle.forEach((item) => {
+      const elemento = document.createElement('li');
+      const texto = document.createElement('span');
+      texto.textContent = `${item.nombre} x${item.cantidad}`;
+
+      const precio = document.createElement('span');
+      precio.textContent = formatoPrecio.format(
+        item.precio_clp * item.cantidad,
+      );
+
+      const quitarBtn = document.createElement('button');
+      quitarBtn.type = 'button';
+      quitarBtn.textContent = 'Quitar';
+      quitarBtn.addEventListener('click', () => {
+        window.cart.quitarProducto(item.id);
+        renderCarrito();
+      });
+
+      elemento.append(texto, precio, quitarBtn);
+      listaCarrito.appendChild(elemento);
+    });
+  }
+
+  totalCarrito.textContent = `Total: ${formatoPrecio.format(total)}`;
+  actualizarEstadoEnvio(detalle, total);
+};
+
 const crearTarjetaProducto = (producto) => {
   const tarjeta = document.createElement('article');
   tarjeta.className = 'tarjeta';
@@ -81,6 +172,14 @@ const crearTarjetaProducto = (producto) => {
   const boton = document.createElement('button');
   boton.type = 'button';
   boton.textContent = 'Agregar';
+
+  boton.addEventListener('click', () => {
+    if (!window.cart) {
+      return;
+    }
+    window.cart.agregarProducto(producto.id);
+    renderCarrito();
+  });
 
   if (producto.estado === 'vendido') {
     const etiqueta = document.createElement('span');
@@ -125,6 +224,7 @@ const cargarProductos = async () => {
 
     crearFiltroUI(categorias);
     renderProductos();
+    renderCarrito();
   } catch (error) {
     productosContainer.innerHTML =
       '<p class="error">Error al cargar los productos.</p>';
@@ -133,4 +233,27 @@ const cargarProductos = async () => {
   }
 };
 
+const prepararCarrito = () => {
+  if (!window.cart) {
+    return;
+  }
+
+  if (!window.cart.storageDisponible) {
+    carritoError.textContent =
+      'El almacenamiento local no está disponible. El carrito podría no guardarse.';
+  }
+
+  vaciarCarritoBtn.addEventListener('click', () => {
+    window.cart.vaciarCarrito();
+    renderCarrito();
+  });
+
+  enviarPedidoBtn.addEventListener('click', (event) => {
+    if (enviarPedidoBtn.getAttribute('aria-disabled') === 'true') {
+      event.preventDefault();
+    }
+  });
+};
+
+prepararCarrito();
 cargarProductos();
