@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "nombre": "Producto de ejemplo",
+    "descripcion": "Descripción inicial",
+    "precio_clp": 5000,
+    "categoria": "libro",
+    "imagen": "img/ejemplo.jpg",
+    "estado": "disponible"
+  }
+]
