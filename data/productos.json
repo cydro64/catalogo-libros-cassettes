@@ -3,7 +3,7 @@
     "id": "CSST-001",
     "nombre": "Aznavour en castellano 2",
     "artista": "Charles Aznavour",
-    "precio_clp": 4990,
+    "precio_clp": 6900,
     "categoria": "cassette",
     "imagen": "img/CSST-001.webp",
     "estado": "disponible"
@@ -12,7 +12,7 @@
     "id": "CSST-002",
     "nombre": "Carlos – Canciones de éxito",
     "artista": "Varios Artistas",
-    "precio_clp": 4990,
+    "precio_clp": 4500,
     "categoria": "cassette",
     "imagen": "img/CSST-002.webp",
     "estado": "disponible"
@@ -21,7 +21,7 @@
     "id": "CSST-003",
     "nombre": "Duets",
     "artista": "Elton John",
-    "precio_clp": 4990,
+    "precio_clp": 5500,
     "categoria": "cassette",
     "imagen": "img/CSST-003.webp",
     "estado": "disponible"
@@ -30,7 +30,7 @@
     "id": "CSST-004",
     "nombre": "Éxitos para sus fiestas",
     "artista": "Banda Revellón",
-    "precio_clp": 4990,
+    "precio_clp": 4500,
     "categoria": "cassette",
     "imagen": "img/CSST-004.webp",
     "estado": "disponible"
@@ -39,7 +39,7 @@
     "id": "CSST-005",
     "nombre": "La soledad",
     "artista": "Carlos Ledermann",
-    "precio_clp": 4990,
+    "precio_clp": 4500,
     "categoria": "cassette",
     "imagen": "img/CSST-005.webp",
     "estado": "disponible"
@@ -48,7 +48,7 @@
     "id": "CSST-006",
     "nombre": "Bad English",
     "artista": "Bad English",
-    "precio_clp": 4990,
+    "precio_clp": 7500,
     "categoria": "cassette",
     "imagen": "img/CSST-006.webp",
     "estado": "disponible"
@@ -57,7 +57,7 @@
     "id": "CSST-007",
     "nombre": "Così Canta Italia",
     "artista": "Cosimo Ianni P.",
-    "precio_clp": 4990,
+    "precio_clp": 4500,
     "categoria": "cassette",
     "imagen": "img/CSST-007.webp",
     "estado": "disponible"
@@ -66,7 +66,7 @@
     "id": "CSST-008",
     "nombre": "Vol. II / Reminiscencias Criollas",
     "artista": "Duo Rey Silva",
-    "precio_clp": 4990,
+    "precio_clp": 5500,
     "categoria": "cassette",
     "imagen": "img/CSST-008.webp",
     "estado": "disponible"
@@ -75,7 +75,7 @@
     "id": "CSST-009",
     "nombre": "Gonna Make You Sweat",
     "artista": "C+C Music Factory",
-    "precio_clp": 4990,
+    "precio_clp": 5500,
     "categoria": "cassette",
     "imagen": "img/CSST-009.webp",
     "estado": "disponible"
@@ -84,7 +84,7 @@
     "id": "CSST-010",
     "nombre": "Coketeando Vol. II",
     "artista": "Coco Lagos Orquesta & Coros",
-    "precio_clp": 4990,
+    "precio_clp": 4500,
     "categoria": "cassette",
     "imagen": "img/CSST-010.webp",
     "estado": "disponible"
@@ -93,7 +93,7 @@
     "id": "CSST-011",
     "nombre": "One to One",
     "artista": "Carole King",
-    "precio_clp": 4990,
+    "precio_clp": 6500,
     "categoria": "cassette",
     "imagen": "img/CSST-011.webp",
     "estado": "disponible"
@@ -102,7 +102,7 @@
     "id": "CSST-012",
     "nombre": "Bye Bye Blues",
     "artista": "Bert Kaempfert",
-    "precio_clp": 4990,
+    "precio_clp": 6000,
     "categoria": "cassette",
     "imagen": "img/CSST-012.webp",
     "estado": "disponible"
@@ -111,7 +111,7 @@
     "id": "CSST-013",
     "nombre": "Bora Bora",
     "artista": "Os Paralamas do Sucesso",
-    "precio_clp": 4990,
+    "precio_clp": 6500,
     "categoria": "cassette",
     "imagen": "img/CSST-013.webp",
     "estado": "disponible"
@@ -120,7 +120,7 @@
     "id": "CSST-014",
     "nombre": "O Canto da Cidade",
     "artista": "Daniela Mercury",
-    "precio_clp": 4990,
+    "precio_clp": 6500,
     "categoria": "cassette",
     "imagen": "img/CSST-014.webp",
     "estado": "disponible"
