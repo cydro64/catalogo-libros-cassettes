@@ -1,11 +1,74 @@
 [
   {
     "id": 1,
-    "nombre": "Producto de ejemplo",
-    "descripcion": "Descripción inicial",
-    "precio_clp": 5000,
+    "nombre": "Cien años de soledad",
+    "descripcion": "Edición de bolsillo con ilustraciones de portada clásica.",
+    "precio_clp": 14990,
     "categoria": "libro",
-    "imagen": "img/ejemplo.jpg",
+    "imagen": "img/libro-placeholder.svg",
+    "estado": "disponible"
+  },
+  {
+    "id": 2,
+    "nombre": "Poemas del viento",
+    "descripcion": "Antología de poesía contemporánea chilena.",
+    "precio_clp": 8990,
+    "categoria": "libro",
+    "imagen": "img/libro-placeholder.svg",
+    "estado": "vendido"
+  },
+  {
+    "id": 3,
+    "nombre": "Guía de cocina casera",
+    "descripcion": "Recetas fáciles para toda la semana.",
+    "precio_clp": 11990,
+    "categoria": "libro",
+    "imagen": "img/libro-placeholder.svg",
+    "estado": "disponible"
+  },
+  {
+    "id": 4,
+    "nombre": "Misterios del sur",
+    "descripcion": "Novela de suspenso ambientada en la Patagonia.",
+    "precio_clp": 13990,
+    "categoria": "libro",
+    "imagen": "img/libro-placeholder.svg",
+    "estado": "disponible"
+  },
+  {
+    "id": 5,
+    "nombre": "Cassette Rock 80s",
+    "descripcion": "Selección de clásicos del rock latino.",
+    "precio_clp": 6990,
+    "categoria": "cassette",
+    "imagen": "img/cassette-placeholder.svg",
+    "estado": "disponible"
+  },
+  {
+    "id": 6,
+    "nombre": "Cassette Jazz Nocturno",
+    "descripcion": "Colección de jazz suave para la noche.",
+    "precio_clp": 7590,
+    "categoria": "cassette",
+    "imagen": "img/cassette-placeholder.svg",
+    "estado": "vendido"
+  },
+  {
+    "id": 7,
+    "nombre": "Cassette Pop 90s",
+    "descripcion": "Hits pop en formato retro.",
+    "precio_clp": 6490,
+    "categoria": "cassette",
+    "imagen": "img/cassette-placeholder.svg",
+    "estado": "disponible"
+  },
+  {
+    "id": 8,
+    "nombre": "Cassette Chillout",
+    "descripcion": "Mezcla instrumental relajante para estudiar.",
+    "precio_clp": 7290,
+    "categoria": "cassette",
+    "imagen": "img/cassette-placeholder.svg",
     "estado": "disponible"
   }
 ]
