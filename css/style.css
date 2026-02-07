@@ -12,6 +12,35 @@ header {
   color: #fff;
 }
 
+#filtros {
+  padding: 1rem;
+}
+
+#filtros input {
+  margin: 0.5rem 0 1rem;
+  padding: 0.5rem 0.75rem;
+  width: min(360px, 100%);
+}
+
+.filtros-categorias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filtros-categorias button {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 0.4rem 0.75rem;
+  cursor: pointer;
+}
+
+.filtros-categorias button.activo {
+  background-color: #222;
+  color: #fff;
+  border-color: #222;
+}
+
 #productos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -31,6 +60,41 @@ header {
   border: 1px solid #ddd;
   padding: 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.tarjeta img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.tarjeta button[disabled] {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.etiqueta-vendido {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #b42318;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  border-radius: 999px;
+}
+
+.sin-resultados,
+.error {
+  grid-column: 1 / -1;
+  margin: 0;
 }
 
 #carrito {
