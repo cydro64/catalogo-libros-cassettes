@@ -1,74 +1,128 @@
 [
   {
-    "id": 1,
-    "nombre": "Cien años de soledad",
-    "descripcion": "Edición de bolsillo con ilustraciones de portada clásica.",
-    "precio_clp": 14990,
-    "categoria": "libro",
-    "imagen": "img/libro-placeholder.svg",
-    "estado": "disponible"
-  },
-  {
-    "id": 2,
-    "nombre": "Poemas del viento",
-    "descripcion": "Antología de poesía contemporánea chilena.",
-    "precio_clp": 8990,
-    "categoria": "libro",
-    "imagen": "img/libro-placeholder.svg",
-    "estado": "vendido"
-  },
-  {
-    "id": 3,
-    "nombre": "Guía de cocina casera",
-    "descripcion": "Recetas fáciles para toda la semana.",
-    "precio_clp": 11990,
-    "categoria": "libro",
-    "imagen": "img/libro-placeholder.svg",
-    "estado": "disponible"
-  },
-  {
-    "id": 4,
-    "nombre": "Misterios del sur",
-    "descripcion": "Novela de suspenso ambientada en la Patagonia.",
-    "precio_clp": 13990,
-    "categoria": "libro",
-    "imagen": "img/libro-placeholder.svg",
-    "estado": "disponible"
-  },
-  {
-    "id": 5,
-    "nombre": "Cassette Rock 80s",
-    "descripcion": "Selección de clásicos del rock latino.",
-    "precio_clp": 6990,
+    "id": "CSST-001",
+    "nombre": "Aznavour en castellano 2",
+    "artista": "Charles Aznavour",
+    "precio_clp": 4990,
     "categoria": "cassette",
-    "imagen": "img/cassette-placeholder.svg",
+    "imagen": "img/CSST-001.webp",
     "estado": "disponible"
   },
   {
-    "id": 6,
-    "nombre": "Cassette Jazz Nocturno",
-    "descripcion": "Colección de jazz suave para la noche.",
-    "precio_clp": 7590,
+    "id": "CSST-002",
+    "nombre": "Carlos – Canciones de éxito",
+    "artista": "Varios Artistas",
+    "precio_clp": 4990,
     "categoria": "cassette",
-    "imagen": "img/cassette-placeholder.svg",
-    "estado": "vendido"
-  },
-  {
-    "id": 7,
-    "nombre": "Cassette Pop 90s",
-    "descripcion": "Hits pop en formato retro.",
-    "precio_clp": 6490,
-    "categoria": "cassette",
-    "imagen": "img/cassette-placeholder.svg",
+    "imagen": "img/CSST-002.webp",
     "estado": "disponible"
   },
   {
-    "id": 8,
-    "nombre": "Cassette Chillout",
-    "descripcion": "Mezcla instrumental relajante para estudiar.",
-    "precio_clp": 7290,
+    "id": "CSST-003",
+    "nombre": "Duets",
+    "artista": "Elton John",
+    "precio_clp": 4990,
     "categoria": "cassette",
-    "imagen": "img/cassette-placeholder.svg",
+    "imagen": "img/CSST-003.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-004",
+    "nombre": "Éxitos para sus fiestas",
+    "artista": "Banda Revellón",
+    "precio_clp": 4990,
+    "categoria": "cassette",
+    "imagen": "img/CSST-004.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-005",
+    "nombre": "La soledad",
+    "artista": "Carlos Ledermann",
+    "precio_clp": 4990,
+    "categoria": "cassette",
+    "imagen": "img/CSST-005.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-006",
+    "nombre": "Bad English",
+    "artista": "Bad English",
+    "precio_clp": 4990,
+    "categoria": "cassette",
+    "imagen": "img/CSST-006.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-007",
+    "nombre": "Così Canta Italia",
+    "artista": "Cosimo Ianni P.",
+    "precio_clp": 4990,
+    "categoria": "cassette",
+    "imagen": "img/CSST-007.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-008",
+    "nombre": "Vol. II / Reminiscencias Criollas",
+    "artista": "Duo Rey Silva",
+    "precio_clp": 4990,
+    "categoria": "cassette",
+    "imagen": "img/CSST-008.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-009",
+    "nombre": "Gonna Make You Sweat",
+    "artista": "C+C Music Factory",
+    "precio_clp": 4990,
+    "categoria": "cassette",
+    "imagen": "img/CSST-009.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-010",
+    "nombre": "Coketeando Vol. II",
+    "artista": "Coco Lagos Orquesta & Coros",
+    "precio_clp": 4990,
+    "categoria": "cassette",
+    "imagen": "img/CSST-010.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-011",
+    "nombre": "One to One",
+    "artista": "Carole King",
+    "precio_clp": 4990,
+    "categoria": "cassette",
+    "imagen": "img/CSST-011.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-012",
+    "nombre": "Bye Bye Blues",
+    "artista": "Bert Kaempfert",
+    "precio_clp": 4990,
+    "categoria": "cassette",
+    "imagen": "img/CSST-012.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-013",
+    "nombre": "Bora Bora",
+    "artista": "Os Paralamas do Sucesso",
+    "precio_clp": 4990,
+    "categoria": "cassette",
+    "imagen": "img/CSST-013.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-014",
+    "nombre": "O Canto da Cidade",
+    "artista": "Daniela Mercury",
+    "precio_clp": 4990,
+    "categoria": "cassette",
+    "imagen": "img/CSST-014.webp",
     "estado": "disponible"
   }
 ]
