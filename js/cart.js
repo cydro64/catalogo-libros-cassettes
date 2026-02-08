@@ -50,13 +50,17 @@ carrito = cargarCarrito();
 
 const obtenerCarrito = () => carrito.map((item) => ({ ...item }));
 
-const agregarProducto = (id) => {
+const agregarProducto = (id, cantidadMaxima = Infinity) => {
   const item = carrito.find((producto) => producto.id === id);
   if (item) {
-    item.cantidad += 1;
-  } else {
-    carrito.push({ id, cantidad: 1 });
+    if (item.cantidad < cantidadMaxima) {
+      item.cantidad += 1;
+      guardarCarrito();
+    }
+    return obtenerCarrito();
   }
+
+  carrito.push({ id, cantidad: 1 });
   guardarCarrito();
   return obtenerCarrito();
 };

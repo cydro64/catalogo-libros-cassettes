@@ -124,5 +124,140 @@
     "categoria": "cassette",
     "imagen": "img/CSST-014.webp",
     "estado": "disponible"
+  },
+  {
+    "id": "CSST-015",
+    "nombre": "Electric Youth",
+    "artista": "Debbie Gibson",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-015.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-016",
+    "nombre": "Screw It",
+    "artista": "Danger Danger",
+    "precio_clp": 7500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-016.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-017",
+    "nombre": "Gatos sin uñas",
+    "artista": "Donna Summer",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-017.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-018",
+    "nombre": "Por elegante y buen mozo también",
+    "artista": "El Clavel",
+    "precio_clp": 4500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-018.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-019",
+    "nombre": "Greatest Hits",
+    "artista": "Dan Fogelberg",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-019.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-020",
+    "nombre": "Cielos Azules",
+    "artista": "Bing Crosby",
+    "precio_clp": 4500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-020.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-021",
+    "nombre": "Canto a la humanidad",
+    "artista": "Danny Rivera",
+    "precio_clp": 4500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-021.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-022",
+    "nombre": "The Wanderer",
+    "artista": "Donna Summer",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-022.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-023",
+    "nombre": "En Castellano",
+    "artista": "Demis Roussos",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-023.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-024",
+    "nombre": "Touch the World",
+    "artista": "Earth, Wind & Fire",
+    "precio_clp": 7000,
+    "categoria": "cassette",
+    "imagen": "img/CSST-024.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-025",
+    "nombre": "Eduardo Peralta",
+    "artista": "Eduardo Peralta",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-025.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-026",
+    "nombre": "Candle in the Wind – The Elton John Story",
+    "artista": "The Twilight Orchestra",
+    "precio_clp": 4500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-026.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-027",
+    "nombre": "Selección Especial",
+    "artista": "Enrique Guzmán",
+    "precio_clp": 5000,
+    "categoria": "cassette",
+    "imagen": "img/CSST-027.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-028",
+    "nombre": "Amante Gaviota",
+    "artista": "Dyango",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-028.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-029",
+    "nombre": "Luz Azul",
+    "artista": "Denise de Kalafe",
+    "precio_clp": 5000,
+    "categoria": "cassette",
+    "imagen": "img/CSST-029.webp",
+    "estado": "disponible"
   }
 ]
