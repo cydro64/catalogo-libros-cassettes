@@ -18,6 +18,13 @@ let terminoBusqueda = '';
 
 const normalizarTexto = (texto) => texto.toLowerCase().trim();
 
+const productoEnCarrito = (id) => {
+  if (!window.cart) {
+    return false;
+  }
+  return window.cart.obtenerCarrito().some((item) => item.id === id);
+};
+
 const crearFiltroUI = (categorias) => {
   filtrosSection.innerHTML = '';
 
@@ -82,10 +89,13 @@ const construirDetalleCarrito = () => {
       if (!producto) {
         return null;
       }
+      const cantidad =
+        producto.categoria === 'cassette' ? 1 : item.cantidad ?? 1;
       return {
         id: item.id,
         nombre: producto.nombre,
-        cantidad: item.cantidad,
+        artista: producto.artista,
+        cantidad,
         precio_clp: producto.precio_clp,
       };
     })
@@ -131,7 +141,7 @@ const renderCarrito = () => {
     detalle.forEach((item) => {
       const elemento = document.createElement('li');
       const texto = document.createElement('span');
-      texto.textContent = `${item.nombre} x${item.cantidad}`;
+      texto.textContent = `${item.artista} — ${item.nombre} x${item.cantidad}`;
 
       const precio = document.createElement('span');
       precio.textContent = formatoPrecio.format(
@@ -144,6 +154,7 @@ const renderCarrito = () => {
       quitarBtn.addEventListener('click', () => {
         window.cart.quitarProducto(item.id);
         renderCarrito();
+        renderProductos();
       });
 
       elemento.append(texto, precio, quitarBtn);
@@ -158,13 +169,14 @@ const renderCarrito = () => {
 const crearTarjetaProducto = (producto) => {
   const tarjeta = document.createElement('article');
   tarjeta.className = 'tarjeta';
+  const esCassette = producto.categoria === 'cassette';
 
   const imagen = document.createElement('img');
   imagen.src = producto.imagen;
   imagen.alt = producto.nombre;
 
   const titulo = document.createElement('h3');
-  titulo.textContent = producto.nombre;
+  titulo.textContent = `${producto.artista} — ${producto.nombre}`;
 
   const precio = document.createElement('p');
   precio.textContent = formatoPrecio.format(producto.precio_clp);
@@ -173,12 +185,29 @@ const crearTarjetaProducto = (producto) => {
   boton.type = 'button';
   boton.textContent = 'Agregar';
 
+  const actualizarEstadoBoton = () => {
+    if (producto.estado === 'vendido') {
+      boton.textContent = 'Vendido';
+      boton.disabled = true;
+      return;
+    }
+
+    if (esCassette && productoEnCarrito(producto.id)) {
+      boton.textContent = 'En carrito';
+      boton.disabled = true;
+    } else {
+      boton.textContent = 'Agregar';
+      boton.disabled = false;
+    }
+  };
+
   boton.addEventListener('click', () => {
     if (!window.cart) {
       return;
     }
-    window.cart.agregarProducto(producto.id);
+    window.cart.agregarProducto(producto.id, esCassette ? 1 : Infinity);
     renderCarrito();
+    actualizarEstadoBoton();
   });
 
   if (producto.estado === 'vendido') {
@@ -186,9 +215,9 @@ const crearTarjetaProducto = (producto) => {
     etiqueta.className = 'etiqueta-vendido';
     etiqueta.textContent = 'Vendido';
     tarjeta.appendChild(etiqueta);
-    boton.disabled = true;
   }
 
+  actualizarEstadoBoton();
   tarjeta.append(imagen, titulo, precio, boton);
   return tarjeta;
 };
@@ -246,6 +275,7 @@ const prepararCarrito = () => {
   vaciarCarritoBtn.addEventListener('click', () => {
     window.cart.vaciarCarrito();
     renderCarrito();
+    renderProductos();
   });
 
   enviarPedidoBtn.addEventListener('click', (event) => {
