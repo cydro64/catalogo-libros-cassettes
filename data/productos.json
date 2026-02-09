@@ -430,5 +430,215 @@
     "categoria": "cassette",
     "imagen": "img/CSST-048.webp",
     "estado": "disponible"
+  },
+  {
+    "id": "CSST-049",
+    "nombre": "Este mundo",
+    "artista": "Gipsy Kings",
+    "precio_clp": 6500,
+    "categoria": "cassettes",
+    "imagen": "img/CSST-049.webp",
+    "etiquetas": ["pop latino", "world"],
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-050",
+    "nombre": "Enséñame",
+    "artista": "Guillermo Fernández",
+    "precio_clp": 5500,
+    "categoria": "cassettes",
+    "imagen": "img/CSST-050.webp",
+    "etiquetas": ["tango", "balada"],
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-051",
+    "nombre": "Solo soy un ser humano",
+    "artista": "Joan Baptista Humet",
+    "precio_clp": 7500,
+    "categoria": "cassettes",
+    "imagen": "img/CSST-051.webp",
+    "etiquetas": ["pop", "canción de autor"],
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-052",
+    "nombre": "Rompiendo corazones",
+    "artista": "Elton John",
+    "precio_clp": 6500,
+    "categoria": "cassettes",
+    "imagen": "img/CSST-052.webp",
+    "etiquetas": ["pop rock"],
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-053",
+    "nombre": "Mirando pa’ la bahía",
+    "artista": "José Luis Hernández",
+    "precio_clp": 5000,
+    "categoria": "cassettes",
+    "imagen": "img/CSST-053.webp",
+    "etiquetas": ["balada", "pop latino"],
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-054",
+    "nombre": "Opus Nº 10",
+    "artista": "Ilan Chester",
+    "precio_clp": 7000,
+    "categoria": "cassettes",
+    "imagen": "img/CSST-054.webp",
+    "etiquetas": ["pop latino", "balada"],
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-055",
+    "nombre": "Los hijos de buda",
+    "artista": "Garibaldi",
+    "precio_clp": 6000,
+    "categoria": "cassettes",
+    "imagen": "img/CSST-055.webp",
+    "etiquetas": ["pop latino", "dance"],
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-056",
+    "nombre": "LIVE BABY LIVE",
+    "artista": "INXS",
+    "precio_clp": 7000,
+    "categoria": "cassettes",
+    "imagen": "img/CSST-056.webp",
+    "etiquetas": ["rock", "pop rock"],
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-057",
+    "nombre": "En Nueva York",
+    "artista": "Javier Solís",
+    "precio_clp": 6000,
+    "categoria": "cassettes",
+    "imagen": "img/CSST-057.webp",
+    "etiquetas": ["ranchera", "bolero"],
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-058",
+    "nombre": "El México Que Se Nos Fue",
+    "artista": "Juan Gabriel",
+    "precio_clp": 7000,
+    "categoria": "cassettes",
+    "imagen": "img/CSST-058.webp",
+    "etiquetas": ["ranchera", "pop latino"],
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-059",
+    "nombre": "Razones para una Sonrisa",
+    "artista": "José Luis Rodríguez",
+    "precio_clp": 6000,
+    "categoria": "cassettes",
+    "imagen": "img/CSST-059.webp",
+    "etiquetas": ["balada", "pop latino"],
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-060",
+    "nombre": "Tchaikovski & Weber – Conciertos",
+    "artista": "Claudio Arrau",
+    "precio_clp": 8500,
+    "categoria": "cassettes",
+    "imagen": "img/CSST-060.webp",
+    "etiquetas": ["clásica", "concierto"],
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-061",
+    "nombre": "Idolos de Siempre – Greatest Hits",
+    "artista": "Johnnie Ray",
+    "precio_clp": 6000,
+    "categoria": "cassettes",
+    "imagen": "img/CSST-061.webp",
+    "etiquetas": ["pop", "rock and roll"],
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-062",
+    "nombre": "Déjame Despertarte con un Beso",
+    "artista": "José Ángel Trelles",
+    "precio_clp": 5000,
+    "categoria": "cassettes",
+    "imagen": "img/CSST-062.webp",
+    "etiquetas": ["balada", "pop latino"],
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-063",
+    "nombre": "Aida Vol.1",
+    "artista": "Giuseppe Verdi / Caballé / Domingo",
+    "precio_clp": 7000,
+    "categoria": "cassettes",
+    "imagen": "img/CSST-063.webp",
+    "etiquetas": ["ópera", "clásica"],
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-064",
+    "nombre": "Aida Vol.2",
+    "artista": "Giuseppe Verdi / Caballé / Domingo",
+    "precio_clp": 7000,
+    "categoria": "cassettes",
+    "imagen": "img/CSST-064.webp",
+    "etiquetas": ["ópera", "clásica"],
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-065",
+    "nombre": "Gimnasia Aeróbica",
+    "artista": "Jane Fonda",
+    "precio_clp": 5000,
+    "categoria": "cassettes",
+    "imagen": "img/CSST-065.webp",
+    "etiquetas": ["aeróbica", "fitness"],
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-066",
+    "nombre": "Canciones españolas",
+    "artista": "José Carreras",
+    "precio_clp": 6500,
+    "categoria": "cassettes",
+    "imagen": "img/CSST-066.webp",
+    "etiquetas": ["clásica", "canción española"],
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-067",
+    "nombre": "El amor es lo que hacemos",
+    "artista": "Kenny Rogers",
+    "precio_clp": 5500,
+    "categoria": "cassettes",
+    "imagen": "img/CSST-067.webp",
+    "etiquetas": ["country", "pop"],
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-068",
+    "nombre": "Melodías de este siglo",
+    "artista": "James Last",
+    "precio_clp": 5000,
+    "categoria": "cassettes",
+    "imagen": "img/CSST-068.webp",
+    "etiquetas": ["instrumental", "easy listening"],
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-069",
+    "nombre": "1990",
+    "artista": "Guillermo Vilas",
+    "precio_clp": 6000,
+    "categoria": "cassettes",
+    "imagen": "img/CSST-069.webp",
+    "etiquetas": ["pop rock"],
+    "estado": "disponible"
   }
 ]
