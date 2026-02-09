@@ -335,11 +335,37 @@ body.carrito-abierto #carrito {
   font-size: 0.95rem;
 }
 
+#carrito li.item-carrito,
+.checkout-list li.item-carrito {
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+#carrito li.item-carrito.animar-entrada,
+.checkout-list li.item-carrito.animar-entrada {
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+#carrito li.item-carrito.animar-salida,
+.checkout-list li.item-carrito.animar-salida {
+  opacity: 0;
+  transform: translateX(8px);
+}
+
 #carrito li span {
   color: var(--text-muted);
 }
 
 #carrito li button {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: transparent;
+  color: var(--text-primary);
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.checkout-list li button {
   border: 1px solid rgba(255, 255, 255, 0.18);
   background: transparent;
   color: var(--text-primary);
@@ -408,6 +434,79 @@ body.carrito-abierto #carrito {
 .error {
   margin-top: 1rem;
   color: #f87171;
+}
+
+.checkout-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 3rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.checkout-card {
+  border: 1px solid var(--border-soft);
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: var(--bg-secondary);
+  box-shadow: var(--shadow-soft);
+}
+
+.checkout-card h2 {
+  margin-top: 0;
+}
+
+.checkout-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.checkout-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.checkout-list li span {
+  color: var(--text-muted);
+}
+
+.checkout-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.checkout-actions button,
+.checkout-actions a {
+  padding: 0.65rem 1.2rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.checkout-actions button {
+  background: transparent;
+  color: var(--text-primary);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.checkout-actions a {
+  background: linear-gradient(120deg, var(--accent), var(--accent-strong));
+  color: #0b0c0f;
+}
+
+.checkout-actions button:hover,
+.checkout-actions a:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
 }
 
 @media (max-width: 640px) {

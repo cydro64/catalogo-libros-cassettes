@@ -28,10 +28,12 @@ const normalizarTexto = (texto) =>
     .trim();
 
 const productoEnCarrito = (id) => {
-  if (!window.cart) {
+  if (!window.carritoManager) {
     return false;
   }
-  return window.cart.obtenerCarrito().some((item) => item.id === id);
+  return window.carritoManager
+    .obtenerCarrito()
+    .items.some((item) => item.id === id);
 };
 
 const crearFiltroUI = (categorias) => {
@@ -96,29 +98,30 @@ const filtrarProductos = () =>
   });
 
 const construirDetalleCarrito = () => {
-  if (!window.cart) {
+  if (!window.carritoManager) {
     return { detalle: [], total: 0 };
   }
 
-  const items = window.cart.obtenerCarrito();
+  const items = window.carritoManager.obtenerCarrito().items;
 
   const detalle = items
     .map((item) => {
       const producto = productos.find((entry) => entry.id === item.id);
-      if (!producto) {
-        return null;
-      }
-      const cantidad =
-        producto.categoria === 'cassette' ? 1 : item.cantidad ?? 1;
+      const nombre =
+        item.nombre ??
+        (producto
+          ? `${producto.artista ?? ''}${producto.artista ? ' — ' : ''}${producto.nombre}`
+          : 'Producto');
+      const precio =
+        item.precio ?? (producto ? producto.precio_clp : 0);
       return {
         id: item.id,
-        nombre: producto.nombre,
-        artista: producto.artista,
-        cantidad,
-        precio_clp: producto.precio_clp,
+        nombre,
+        cantidad: item.cantidad ?? 1,
+        precio_clp: precio,
       };
     })
-    .filter(Boolean);
+    .filter((item) => item.precio_clp > 0);
 
   const total = detalle.reduce(
     (acc, item) => acc + item.precio_clp * item.cantidad,
@@ -145,12 +148,13 @@ const actualizarEstadoEnvio = (detalle, total) => {
 };
 
 const actualizarContadorCarrito = () => {
-  if (!carritoCount || !window.cart) {
+  if (!carritoCount || !window.carritoManager) {
     return;
   }
 
-  const totalItems = window.cart
+  const totalItems = window.carritoManager
     .obtenerCarrito()
+    .items
     .reduce((acc, item) => acc + (item.cantidad ?? 0), 0);
   carritoCount.textContent = totalItems;
   carritoCount.style.display = totalItems > 0 ? 'inline-flex' : 'none';
@@ -172,7 +176,8 @@ const renderCarrito = () => {
     detalle.forEach((item) => {
       const elemento = document.createElement('li');
       const texto = document.createElement('span');
-      texto.textContent = `${item.artista} — ${item.nombre}`;
+      texto.textContent =
+        item.cantidad > 1 ? `${item.nombre} x${item.cantidad}` : item.nombre;
 
       const precio = document.createElement('span');
       precio.textContent = formatoPrecio.format(
@@ -183,12 +188,17 @@ const renderCarrito = () => {
       quitarBtn.type = 'button';
       quitarBtn.textContent = 'Quitar';
       quitarBtn.addEventListener('click', () => {
-        window.cart.quitarProducto(item.id);
-        renderCarrito();
-        renderProductos();
+        elemento.classList.add('animar-salida');
+        setTimeout(() => {
+          window.carritoManager.removerProducto(item.id);
+        }, 180);
       });
 
       elemento.append(texto, precio, quitarBtn);
+      elemento.classList.add('item-carrito', 'animar-entrada');
+      requestAnimationFrame(() => {
+        elemento.classList.remove('animar-entrada');
+      });
       listaCarrito.appendChild(elemento);
     });
   }
@@ -201,8 +211,7 @@ const renderCarrito = () => {
 const crearTarjetaProducto = (producto) => {
   const tarjeta = document.createElement('article');
   tarjeta.className = 'tarjeta';
-  const esCassette = producto.categoria === 'cassette';
-
+  tarjeta.dataset.id = producto.id;
   const imagen = document.createElement('img');
   imagen.src = producto.imagen;
   imagen.alt = producto.nombre;
@@ -224,7 +233,7 @@ const crearTarjetaProducto = (producto) => {
       return;
     }
 
-    if (esCassette && productoEnCarrito(producto.id)) {
+    if (productoEnCarrito(producto.id)) {
       boton.textContent = 'En carrito';
       boton.disabled = true;
     } else {
@@ -234,11 +243,14 @@ const crearTarjetaProducto = (producto) => {
   };
 
   boton.addEventListener('click', () => {
-    if (!window.cart) {
+    if (!window.carritoManager) {
       return;
     }
-    window.cart.agregarProducto(producto.id, esCassette ? 1 : Infinity);
-    renderCarrito();
+    window.carritoManager.agregarProducto(
+      producto.id,
+      `${producto.artista ?? ''}${producto.artista ? ' — ' : ''}${producto.nombre}`,
+      producto.precio_clp,
+    );
     actualizarEstadoBoton();
   });
 
@@ -295,19 +307,19 @@ const cargarProductos = async () => {
 };
 
 const prepararCarrito = () => {
-  if (!window.cart) {
+  if (!window.carritoManager) {
     return;
   }
 
-  if (!window.cart.storageDisponible) {
+  if (!window.carritoManager.storageDisponible) {
     carritoError.textContent =
       'El almacenamiento local no está disponible. El carrito podría no guardarse.';
   }
 
   vaciarCarritoBtn.addEventListener('click', () => {
-    window.cart.vaciarCarrito();
-    renderCarrito();
-    renderProductos();
+    if (window.confirm('¿Seguro que quieres vaciar el carrito?')) {
+      window.carritoManager.vaciarCarrito();
+    }
   });
 
   enviarPedidoBtn.addEventListener('click', (event) => {
@@ -344,6 +356,12 @@ const prepararCarrito = () => {
 
   cerrarCarritoBtn.addEventListener('click', cerrarCarrito);
   carritoOverlay.addEventListener('click', cerrarCarrito);
+
+  window.carritoManager.suscribir(() => {
+    renderCarrito();
+    renderProductos();
+  });
+  window.addEventListener('carritoActualizado', actualizarContadorCarrito);
 };
 
 prepararCarrito();
