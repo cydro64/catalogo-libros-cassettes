@@ -5,6 +5,10 @@ const totalCarrito = document.getElementById('total-carrito');
 const vaciarCarritoBtn = document.getElementById('vaciar-carrito');
 const enviarPedidoBtn = document.getElementById('enviar-pedido');
 const carritoError = document.getElementById('carrito-error');
+const toggleCarritoBtn = document.getElementById('toggle-carrito');
+const cerrarCarritoBtn = document.getElementById('cerrar-carrito');
+const carritoOverlay = document.getElementById('carrito-overlay');
+const carritoCount = document.getElementById('carrito-count');
 
 const formatoPrecio = new Intl.NumberFormat('es-CL', {
   style: 'currency',
@@ -125,6 +129,18 @@ const actualizarEstadoEnvio = (detalle, total) => {
   }
 };
 
+const actualizarContadorCarrito = () => {
+  if (!carritoCount || !window.cart) {
+    return;
+  }
+
+  const totalItems = window.cart
+    .obtenerCarrito()
+    .reduce((acc, item) => acc + (item.cantidad ?? 0), 0);
+  carritoCount.textContent = totalItems;
+  carritoCount.style.display = totalItems > 0 ? 'inline-flex' : 'none';
+};
+
 const renderCarrito = () => {
   if (!listaCarrito || !totalCarrito) {
     return;
@@ -164,6 +180,7 @@ const renderCarrito = () => {
 
   totalCarrito.textContent = `Total: ${formatoPrecio.format(total)}`;
   actualizarEstadoEnvio(detalle, total);
+  actualizarContadorCarrito();
 };
 
 const crearTarjetaProducto = (producto) => {
@@ -283,6 +300,35 @@ const prepararCarrito = () => {
       event.preventDefault();
     }
   });
+
+  if (!toggleCarritoBtn || !cerrarCarritoBtn || !carritoOverlay) {
+    return;
+  }
+
+  const abrirCarrito = () => {
+    document.body.classList.add('carrito-abierto');
+    carritoOverlay.hidden = false;
+    toggleCarritoBtn.setAttribute('aria-expanded', 'true');
+    document.getElementById('carrito').setAttribute('aria-hidden', 'false');
+  };
+
+  const cerrarCarrito = () => {
+    document.body.classList.remove('carrito-abierto');
+    carritoOverlay.hidden = true;
+    toggleCarritoBtn.setAttribute('aria-expanded', 'false');
+    document.getElementById('carrito').setAttribute('aria-hidden', 'true');
+  };
+
+  toggleCarritoBtn.addEventListener('click', () => {
+    if (document.body.classList.contains('carrito-abierto')) {
+      cerrarCarrito();
+    } else {
+      abrirCarrito();
+    }
+  });
+
+  cerrarCarritoBtn.addEventListener('click', cerrarCarrito);
+  carritoOverlay.addEventListener('click', cerrarCarrito);
 };
 
 prepararCarrito();
