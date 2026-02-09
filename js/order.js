@@ -12,7 +12,7 @@ const generarMensajeWhatsApp = (carrito, total) => {
   const detalle = carrito
     .map(
       (item) =>
-        `- ${item.nombre} x${item.cantidad}: ${formatoPrecioPedido.format(
+        `- ${item.nombre}: ${formatoPrecioPedido.format(
           item.precio_clp * item.cantidad,
         )}`,
     )

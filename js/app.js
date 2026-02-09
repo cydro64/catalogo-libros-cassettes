@@ -172,7 +172,7 @@ const renderCarrito = () => {
     detalle.forEach((item) => {
       const elemento = document.createElement('li');
       const texto = document.createElement('span');
-      texto.textContent = `${item.artista} — ${item.nombre} x${item.cantidad}`;
+      texto.textContent = `${item.artista} — ${item.nombre}`;
 
       const precio = document.createElement('span');
       precio.textContent = formatoPrecio.format(
