@@ -8,14 +8,31 @@
   </head>
   <body>
     <header>
-      <h1>Catálogo Libros y Cassettes</h1>
+      <div class="header-content">
+        <h1>Catálogo Libros y Cassettes</h1>
+        <button
+          id="toggle-carrito"
+          class="cart-toggle"
+          type="button"
+          aria-controls="carrito"
+          aria-expanded="false"
+        >
+          <span class="cart-icon" aria-hidden="true">🛒</span>
+          <span class="cart-text">Carrito</span>
+          <span id="carrito-count" class="cart-badge" aria-label="Artículos en el carrito">0</span>
+        </button>
+      </div>
     </header>
+    <div id="carrito-overlay" class="carrito-overlay" hidden></div>
     <section id="filtros">
       <h2>Filtros por categoría</h2>
     </section>
     <div id="productos"></div>
-    <div id="carrito">
-      <h2>Pedido</h2>
+    <aside id="carrito" aria-hidden="true">
+      <div class="carrito-header">
+        <h2>Pedido</h2>
+        <button id="cerrar-carrito" class="carrito-cerrar" type="button">Cerrar</button>
+      </div>
       <ul id="lista-carrito"></ul>
       <p id="total-carrito"></p>
       <div class="acciones-carrito">
@@ -32,7 +49,7 @@
         >
       </div>
       <p id="carrito-error" class="error"></p>
-    </div>
+    </aside>
     <script src="js/cart.js"></script>
     <script src="js/order.js"></script>
     <script src="js/app.js"></script>
