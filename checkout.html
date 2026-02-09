@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tu Pedido - Catálogo de Libros y Cassettes</title>
+    <meta
+      name="description"
+      content="Revisa tu carrito, ajusta cantidades y confirma el pedido de libros y cassettes."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>Tu pedido</h1>
+        <a class="cart-toggle" href="index.html">
+          <span class="cart-icon" aria-hidden="true">⬅</span>
+          <span class="cart-text">Volver al catálogo</span>
+          <span id="carrito-count" class="cart-badge" aria-label="Artículos en el carrito">0</span>
+        </a>
+      </div>
+    </header>
+    <main class="checkout-wrapper">
+      <section class="checkout-card">
+        <h2>Resumen del carrito</h2>
+        <ul id="checkout-list" class="checkout-list"></ul>
+        <p id="checkout-total"></p>
+        <div class="checkout-actions">
+          <button id="checkout-clear" type="button">Vaciar</button>
+          <a
+            id="checkout-whatsapp"
+            class="boton-whatsapp"
+            href="https://wa.me/56976449957"
+            target="_blank"
+            rel="noopener"
+          >
+            Enviar pedido por WhatsApp al vendedor
+          </a>
+        </div>
+        <p id="checkout-error" class="error"></p>
+      </section>
+    </main>
+    <script src="js/carritoManager.js"></script>
+    <script src="js/order.js"></script>
+    <script src="js/checkout.js"></script>
+  </body>
+</html>
