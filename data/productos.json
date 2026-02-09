@@ -259,5 +259,176 @@
     "categoria": "cassette",
     "imagen": "img/CSST-029.webp",
     "estado": "disponible"
+  },
+  {
+    "id": "CSST-030",
+    "nombre": "Pura Sangre",
+    "artista": "Pura Sangre Bronco",
+    "precio_clp": 4500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-030.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-031",
+    "nombre": "One Voice",
+    "artista": "Barbra Streisand",
+    "precio_clp": 6000,
+    "categoria": "cassette",
+    "imagen": "img/CSST-031.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-032",
+    "nombre": "Al Centro de la Ciudad",
+    "artista": "Carlos Vives",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-032.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-033",
+    "nombre": "Tiempo",
+    "artista": "Demis Roussos",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-033.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-034",
+    "nombre": "El Rap del Caballero",
+    "artista": "Flakelly",
+    "precio_clp": 4000,
+    "categoria": "cassette",
+    "imagen": "img/CSST-034.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-035",
+    "nombre": "Cómplices",
+    "artista": "Alberto Plaza",
+    "precio_clp": 4500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-035.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-036",
+    "nombre": "Reflexión",
+    "artista": "Demis Roussos",
+    "precio_clp": 6000,
+    "categoria": "cassette",
+    "imagen": "img/CSST-036.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-037",
+    "nombre": "Fiesta de Cumbias",
+    "artista": "Amparito Jiménez",
+    "precio_clp": 4500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-037.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-038",
+    "nombre": "Las Canciones Más Hermosas del Fischer Chöre",
+    "artista": "Fischer Chöre",
+    "precio_clp": 5000,
+    "categoria": "cassette",
+    "imagen": "img/CSST-038.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-039",
+    "nombre": "Recordando",
+    "artista": "Demis Roussos",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-039.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-040",
+    "nombre": "Un buen perdedor y otros éxitos",
+    "artista": "Franco de Vita",
+    "precio_clp": 6000,
+    "categoria": "cassette",
+    "imagen": "img/CSST-040.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-041",
+    "nombre": "Al norte del sur",
+    "artista": "Franco de Vita",
+    "precio_clp": 6000,
+    "categoria": "cassette",
+    "imagen": "img/CSST-041.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-042",
+    "nombre": "Dance Super Hits Compilation",
+    "artista": "Various Artists",
+    "precio_clp": 5000,
+    "categoria": "cassette",
+    "imagen": "img/CSST-042.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-043",
+    "nombre": "Grandes Éxitos",
+    "artista": "Eagles",
+    "precio_clp": 7000,
+    "categoria": "cassette",
+    "imagen": "img/CSST-043.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-044",
+    "nombre": "Entre lunas",
+    "artista": "Emmanuel",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-044.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-045",
+    "nombre": "Trilogy: The Present",
+    "artista": "Frank Sinatra",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-045.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-046",
+    "nombre": "Flor Silvestre",
+    "artista": "Flor Silvestre",
+    "precio_clp": 4500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-046.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-047",
+    "nombre": "Faith",
+    "artista": "George Michael",
+    "precio_clp": 7500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-047.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-048",
+    "nombre": "Sobrevivientes del amor",
+    "artista": "Braulio",
+    "precio_clp": 5000,
+    "categoria": "cassette",
+    "imagen": "img/CSST-048.webp",
+    "estado": "disponible"
   }
 ]
