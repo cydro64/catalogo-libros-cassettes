@@ -373,6 +373,17 @@ body.carrito-abierto #carrito {
   color: #0b0c0f;
 }
 
+.acciones-carrito a.boton-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.acciones-carrito a .icono-whatsapp {
+  width: 18px;
+  height: 18px;
+}
+
 .acciones-carrito button:hover,
 .acciones-carrito a:hover {
   transform: translateY(-1px);

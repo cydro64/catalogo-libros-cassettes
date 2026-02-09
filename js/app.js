@@ -20,7 +20,12 @@ let productos = [];
 let categoriaSeleccionada = 'todas';
 let terminoBusqueda = '';
 
-const normalizarTexto = (texto) => texto.toLowerCase().trim();
+const normalizarTexto = (texto) =>
+  texto
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .trim();
 
 const productoEnCarrito = (id) => {
   if (!window.cart) {
@@ -74,7 +79,17 @@ const filtrarProductos = () =>
       categoriaSeleccionada === 'todas' ||
       producto.categoria === categoriaSeleccionada;
     const textoBusqueda = normalizarTexto(
-      `${producto.nombre} ${producto.descripcion}`,
+      [
+        producto.nombre,
+        producto.artista,
+        producto.descripcion,
+        producto.autor,
+        producto.editorial,
+        producto.categoria,
+        producto.id,
+      ]
+        .filter(Boolean)
+        .join(' '),
     );
     const coincideBusqueda = textoBusqueda.includes(terminoBusqueda);
     return coincideCategoria && coincideBusqueda;
