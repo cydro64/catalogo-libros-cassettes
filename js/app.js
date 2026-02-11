@@ -22,6 +22,14 @@ let productos = [];
 let categoriaSeleccionada = 'todas';
 let terminoBusqueda = '';
 
+const normalizarCategoria = (categoria = '') => {
+  const categoriaNormalizada = normalizarTexto(categoria);
+  if (categoriaNormalizada === 'cassette' || categoriaNormalizada === 'cassettes') {
+    return 'cassettes';
+  }
+  return categoriaNormalizada;
+};
+
 const normalizarTexto = (texto) =>
   texto
     .toLowerCase()
@@ -56,7 +64,11 @@ const crearFiltroUI = (categorias) => {
   const filtrosContainer = document.createElement('div');
   filtrosContainer.className = 'filtros-categorias';
 
-  const botones = ['todas', ...categorias].map((categoria) => {
+  const categoriasOrdenadas = [...categorias].sort((a, b) =>
+    a.localeCompare(b, 'es'),
+  );
+
+  const botones = ['todas', ...categoriasOrdenadas].map((categoria) => {
     const boton = document.createElement('button');
     boton.type = 'button';
     boton.textContent = categoria.charAt(0).toUpperCase() + categoria.slice(1);
@@ -81,7 +93,7 @@ const filtrarProductos = () =>
   productos.filter((producto) => {
     const coincideCategoria =
       categoriaSeleccionada === 'todas' ||
-      producto.categoria === categoriaSeleccionada;
+      normalizarCategoria(producto.categoria) === categoriaSeleccionada;
     const textoBusqueda = normalizarTexto(
       [
         producto.nombre,
@@ -292,6 +304,10 @@ const cargarProductos = async () => {
       throw new Error('No se pudo cargar el catálogo.');
     }
     productos = await respuesta.json();
+    productos = productos.map((producto) => ({
+      ...producto,
+      categoria: normalizarCategoria(producto.categoria),
+    }));
 
     const categorias = [
       ...new Set(productos.map((producto) => producto.categoria)),
