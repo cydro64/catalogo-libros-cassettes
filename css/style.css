@@ -25,6 +25,28 @@ body {
   min-height: 100vh;
 }
 
+@media (min-width: 1100px) {
+  body {
+    padding-right: min(420px, 34vw);
+  }
+
+  #toggle-carrito {
+    display: none;
+  }
+
+  .carrito-overlay {
+    display: none;
+  }
+
+  #carrito {
+    transform: translateX(0);
+  }
+
+  .carrito-cerrar {
+    display: none;
+  }
+}
+
 header {
   background: linear-gradient(120deg, #0f1116 0%, #1d212a 100%);
   color: var(--text-primary);
