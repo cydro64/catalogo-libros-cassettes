@@ -9,6 +9,8 @@ const toggleCarritoBtn = document.getElementById('toggle-carrito');
 const cerrarCarritoBtn = document.getElementById('cerrar-carrito');
 const carritoOverlay = document.getElementById('carrito-overlay');
 const carritoCount = document.getElementById('carrito-count');
+const carritoAside = document.getElementById('carrito');
+const mediaQueryCarritoFijo = window.matchMedia('(min-width: 1100px)');
 
 const formatoPrecio = new Intl.NumberFormat('es-CL', {
   style: 'currency',
@@ -328,7 +330,7 @@ const prepararCarrito = () => {
     }
   });
 
-  if (!toggleCarritoBtn || !cerrarCarritoBtn || !carritoOverlay) {
+  if (!toggleCarritoBtn || !cerrarCarritoBtn || !carritoOverlay || !carritoAside) {
     return;
   }
 
@@ -336,14 +338,26 @@ const prepararCarrito = () => {
     document.body.classList.add('carrito-abierto');
     carritoOverlay.hidden = false;
     toggleCarritoBtn.setAttribute('aria-expanded', 'true');
-    document.getElementById('carrito').setAttribute('aria-hidden', 'false');
+    carritoAside.setAttribute('aria-hidden', 'false');
   };
 
   const cerrarCarrito = () => {
     document.body.classList.remove('carrito-abierto');
     carritoOverlay.hidden = true;
     toggleCarritoBtn.setAttribute('aria-expanded', 'false');
-    document.getElementById('carrito').setAttribute('aria-hidden', 'true');
+    carritoAside.setAttribute('aria-hidden', 'true');
+  };
+
+  const sincronizarModoCarrito = () => {
+    if (mediaQueryCarritoFijo.matches) {
+      document.body.classList.add('carrito-abierto');
+      carritoOverlay.hidden = true;
+      toggleCarritoBtn.setAttribute('aria-expanded', 'true');
+      carritoAside.setAttribute('aria-hidden', 'false');
+      return;
+    }
+
+    cerrarCarrito();
   };
 
   toggleCarritoBtn.addEventListener('click', () => {
@@ -356,6 +370,8 @@ const prepararCarrito = () => {
 
   cerrarCarritoBtn.addEventListener('click', cerrarCarrito);
   carritoOverlay.addEventListener('click', cerrarCarrito);
+  mediaQueryCarritoFijo.addEventListener('change', sincronizarModoCarrito);
+  sincronizarModoCarrito();
 
   window.carritoManager.suscribir(() => {
     renderCarrito();
