@@ -29,17 +29,20 @@
     <header>
       <div class="header-content">
         <h1>Catálogo Libros y Cassettes</h1>
-        <button
-          id="toggle-carrito"
-          class="cart-toggle"
-          type="button"
-          aria-controls="carrito"
-          aria-expanded="false"
-        >
-          <span class="cart-icon" aria-hidden="true">🛒</span>
-          <span class="cart-text">Carrito</span>
-          <span id="carrito-count" class="cart-badge" aria-label="Artículos en el carrito">0</span>
-        </button>
+        <div class="header-botones">
+          <a href="flyer.html" class="boton-flyer" target="_blank">📢 Publicidad</a>
+          <button
+            id="toggle-carrito"
+            class="cart-toggle"
+            type="button"
+            aria-controls="carrito"
+            aria-expanded="false"
+          >
+            <span class="cart-icon" aria-hidden="true">🛒</span>
+            <span class="cart-text">Carrito</span>
+            <span id="carrito-count" class="cart-badge" aria-label="Artículos en el carrito">0</span>
+          </button>
+        </div>
       </div>
     </header>
     <div id="carrito-overlay" class="carrito-overlay" hidden></div>
