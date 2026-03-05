@@ -217,7 +217,7 @@
   },
   {
     "id": "CSST-025",
-    "nombre": "Eduardo Peralta",
+    "nombre": "Homonimo",
     "artista": "Eduardo Peralta",
     "precio_clp": 5500,
     "categoria": "cassette",
@@ -436,9 +436,8 @@
     "nombre": "Este mundo",
     "artista": "Gipsy Kings",
     "precio_clp": 6500,
-    "categoria": "cassettes",
+    "categoria": "cassette",
     "imagen": "img/CSST-049.webp",
-    "etiquetas": ["pop latino", "world"],
     "estado": "disponible"
   },
   {
@@ -446,9 +445,8 @@
     "nombre": "Enséñame",
     "artista": "Guillermo Fernández",
     "precio_clp": 5500,
-    "categoria": "cassettes",
+    "categoria": "cassette",
     "imagen": "img/CSST-050.webp",
-    "etiquetas": ["tango", "balada"],
     "estado": "disponible"
   },
   {
@@ -456,9 +454,8 @@
     "nombre": "Solo soy un ser humano",
     "artista": "Joan Baptista Humet",
     "precio_clp": 7500,
-    "categoria": "cassettes",
+    "categoria": "cassette",
     "imagen": "img/CSST-051.webp",
-    "etiquetas": ["pop", "canción de autor"],
     "estado": "disponible"
   },
   {
@@ -466,9 +463,8 @@
     "nombre": "Rompiendo corazones",
     "artista": "Elton John",
     "precio_clp": 6500,
-    "categoria": "cassettes",
+    "categoria": "cassette",
     "imagen": "img/CSST-052.webp",
-    "etiquetas": ["pop rock"],
     "estado": "disponible"
   },
   {
@@ -476,9 +472,8 @@
     "nombre": "Mirando pa’ la bahía",
     "artista": "José Luis Hernández",
     "precio_clp": 5000,
-    "categoria": "cassettes",
+    "categoria": "cassette",
     "imagen": "img/CSST-053.webp",
-    "etiquetas": ["balada", "pop latino"],
     "estado": "disponible"
   },
   {
@@ -486,9 +481,8 @@
     "nombre": "Opus Nº 10",
     "artista": "Ilan Chester",
     "precio_clp": 7000,
-    "categoria": "cassettes",
+    "categoria": "cassette",
     "imagen": "img/CSST-054.webp",
-    "etiquetas": ["pop latino", "balada"],
     "estado": "disponible"
   },
   {
@@ -496,9 +490,8 @@
     "nombre": "Los hijos de buda",
     "artista": "Garibaldi",
     "precio_clp": 6000,
-    "categoria": "cassettes",
+    "categoria": "cassette",
     "imagen": "img/CSST-055.webp",
-    "etiquetas": ["pop latino", "dance"],
     "estado": "disponible"
   },
   {
@@ -506,9 +499,8 @@
     "nombre": "LIVE BABY LIVE",
     "artista": "INXS",
     "precio_clp": 7000,
-    "categoria": "cassettes",
+    "categoria": "cassette",
     "imagen": "img/CSST-056.webp",
-    "etiquetas": ["rock", "pop rock"],
     "estado": "disponible"
   },
   {
@@ -516,9 +508,8 @@
     "nombre": "En Nueva York",
     "artista": "Javier Solís",
     "precio_clp": 6000,
-    "categoria": "cassettes",
+    "categoria": "cassette",
     "imagen": "img/CSST-057.webp",
-    "etiquetas": ["ranchera", "bolero"],
     "estado": "disponible"
   },
   {
@@ -526,9 +517,8 @@
     "nombre": "El México Que Se Nos Fue",
     "artista": "Juan Gabriel",
     "precio_clp": 7000,
-    "categoria": "cassettes",
+    "categoria": "cassette",
     "imagen": "img/CSST-058.webp",
-    "etiquetas": ["ranchera", "pop latino"],
     "estado": "disponible"
   },
   {
@@ -536,9 +526,8 @@
     "nombre": "Razones para una Sonrisa",
     "artista": "José Luis Rodríguez",
     "precio_clp": 6000,
-    "categoria": "cassettes",
+    "categoria": "cassette",
     "imagen": "img/CSST-059.webp",
-    "etiquetas": ["balada", "pop latino"],
     "estado": "disponible"
   },
   {
@@ -546,9 +535,8 @@
     "nombre": "Tchaikovski & Weber – Conciertos",
     "artista": "Claudio Arrau",
     "precio_clp": 8500,
-    "categoria": "cassettes",
+    "categoria": "cassette",
     "imagen": "img/CSST-060.webp",
-    "etiquetas": ["clásica", "concierto"],
     "estado": "disponible"
   },
   {
@@ -556,9 +544,8 @@
     "nombre": "Idolos de Siempre – Greatest Hits",
     "artista": "Johnnie Ray",
     "precio_clp": 6000,
-    "categoria": "cassettes",
+    "categoria": "cassette",
     "imagen": "img/CSST-061.webp",
-    "etiquetas": ["pop", "rock and roll"],
     "estado": "disponible"
   },
   {
@@ -566,29 +553,26 @@
     "nombre": "Déjame Despertarte con un Beso",
     "artista": "José Ángel Trelles",
     "precio_clp": 5000,
-    "categoria": "cassettes",
+    "categoria": "cassette",
     "imagen": "img/CSST-062.webp",
-    "etiquetas": ["balada", "pop latino"],
     "estado": "disponible"
   },
   {
     "id": "CSST-063",
-    "nombre": "Aida Vol.1",
-    "artista": "Giuseppe Verdi / Caballé / Domingo",
+    "nombre": "Aida – Volumen 1",
+    "artista": "Giuseppe Verdi / Montserrat Caballé / Plácido Domingo / Riccardo Muti",
     "precio_clp": 7000,
-    "categoria": "cassettes",
+    "categoria": "cassette",
     "imagen": "img/CSST-063.webp",
-    "etiquetas": ["ópera", "clásica"],
     "estado": "disponible"
   },
   {
     "id": "CSST-064",
-    "nombre": "Aida Vol.2",
-    "artista": "Giuseppe Verdi / Caballé / Domingo",
+    "nombre": "Aida – Volumen 2",
+    "artista": "Giuseppe Verdi / Montserrat Caballé / Plácido Domingo / Riccardo Muti",
     "precio_clp": 7000,
-    "categoria": "cassettes",
+    "categoria": "cassette",
     "imagen": "img/CSST-064.webp",
-    "etiquetas": ["ópera", "clásica"],
     "estado": "disponible"
   },
   {
@@ -596,9 +580,8 @@
     "nombre": "Gimnasia Aeróbica",
     "artista": "Jane Fonda",
     "precio_clp": 5000,
-    "categoria": "cassettes",
+    "categoria": "cassette",
     "imagen": "img/CSST-065.webp",
-    "etiquetas": ["aeróbica", "fitness"],
     "estado": "disponible"
   },
   {
@@ -606,9 +589,8 @@
     "nombre": "Canciones españolas",
     "artista": "José Carreras",
     "precio_clp": 6500,
-    "categoria": "cassettes",
+    "categoria": "cassette",
     "imagen": "img/CSST-066.webp",
-    "etiquetas": ["clásica", "canción española"],
     "estado": "disponible"
   },
   {
@@ -616,9 +598,8 @@
     "nombre": "El amor es lo que hacemos",
     "artista": "Kenny Rogers",
     "precio_clp": 5500,
-    "categoria": "cassettes",
+    "categoria": "cassette",
     "imagen": "img/CSST-067.webp",
-    "etiquetas": ["country", "pop"],
     "estado": "disponible"
   },
   {
@@ -626,19 +607,1583 @@
     "nombre": "Melodías de este siglo",
     "artista": "James Last",
     "precio_clp": 5000,
-    "categoria": "cassettes",
+    "categoria": "cassette",
     "imagen": "img/CSST-068.webp",
-    "etiquetas": ["instrumental", "easy listening"],
     "estado": "disponible"
   },
   {
     "id": "CSST-069",
-    "nombre": "1990",
+    "nombre": 1990,
     "artista": "Guillermo Vilas",
     "precio_clp": 6000,
-    "categoria": "cassettes",
+    "categoria": "cassette",
     "imagen": "img/CSST-069.webp",
-    "etiquetas": ["pop rock"],
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-070",
+    "nombre": "Ponty",
+    "artista": "Tchokola",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-070.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-071",
+    "nombre": "La Vie en Rose",
+    "artista": "101 Strings (Alshire)",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-071.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-072",
+    "nombre": "Musica para Camaleones",
+    "artista": "Javier Gurruchaga",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-072.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-073",
+    "nombre": "Kawa",
+    "artista": "Tribal Purisíma",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-073.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-074",
+    "nombre": "Kryžler & Kompaniy",
+    "artista": "Kryžler & Kompaniy",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-074.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-075",
+    "nombre": "De Bach a los Beatles",
+    "artista": "Leo Brouwer",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-075.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-076",
+    "nombre": "La Fiesta del Año",
+    "artista": "George Dann",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-076.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-077",
+    "nombre": "Gabriela",
+    "artista": "Antonio Carlos Jobim",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-077.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-078",
+    "nombre": "London-Warsaw-New York",
+    "artista": "Basia",
+    "precio_clp": 6000,
+    "categoria": "cassette",
+    "imagen": "img/CSST-078.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-079",
+    "nombre": "Candle in the Wind - The Elton John Story",
+    "artista": "The Twilight Orchestra",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-079.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-080",
+    "nombre": "Hijos",
+    "artista": "Gloria Simonetti",
+    "precio_clp": 6000,
+    "categoria": "cassette",
+    "imagen": "img/CSST-080.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-081",
+    "nombre": "De Corazón a Corazón",
+    "artista": "Eydie Gormé",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-081.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-082",
+    "nombre": "Capissimo",
+    "artista": "Capissimo",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-082.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-083",
+    "nombre": "El Maestro del Charango",
+    "artista": "Hector Soto",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-083.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-084",
+    "nombre": "Éxitos de Oro",
+    "artista": "Ginette Acevedo",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-084.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-085",
+    "nombre": "Los Grandes Éxitos de María Bethania",
+    "artista": "María Bethania",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-085.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-086",
+    "nombre": "Alma y Sabor del Perú",
+    "artista": "Lucho Juana",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-086.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-087",
+    "nombre": "Música para la Ruta",
+    "artista": "Los Joao",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-087.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-088",
+    "nombre": "¡10 Años Contigo!",
+    "artista": "María Martha Serra Lima",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-088.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-089",
+    "nombre": "Extraños en la Noche",
+    "artista": "101 Strings",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-089.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-090",
+    "nombre": "Into the Light",
+    "artista": "Gloria Estefan",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-090.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-091",
+    "nombre": "A La Hora Del Crepusculo",
+    "artista": "Lawrence Welk",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-091.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-092",
+    "nombre": "Voices",
+    "artista": "Kenny Thomas",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-092.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-093",
+    "nombre": "Scorchin' Blues",
+    "artista": "Johnny Winter",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-093.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-094",
+    "nombre": "Tengo derecho a ser feliz",
+    "artista": "José Luis Rodriguez",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-094.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-095",
+    "nombre": "Desde mi Ninel",
+    "artista": "Conjunto Huenu",
+    "precio_clp": 5000,
+    "categoria": "cassette",
+    "imagen": "img/CSST-095.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-096",
+    "nombre": "Iñaki Uranga",
+    "artista": "Iñaki Uranga",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-096.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-097",
+    "nombre": "Chalchingla",
+    "artista": "Jorge Aguilera",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-097.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-098",
+    "nombre": "Leo Dan - Leo Rap",
+    "artista": "Leo Dan",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-098.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-099",
+    "nombre": "Brindemos por el amor",
+    "artista": "Los Quincheros",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-099.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-100",
+    "nombre": "Canto do Paje",
+    "artista": "María Bethania",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-100.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-101",
+    "nombre": "Mundo",
+    "artista": "Marta Sánchez",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-101.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-102",
+    "nombre": "Atardecer Encantado - 14 Grandes Éxitos",
+    "artista": "Mantovani y su Orquesta",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-102.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-103",
+    "nombre": "Símbolo de Amor",
+    "artista": "María Martha Serra Lima y Los Hispanos",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-103.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-104",
+    "nombre": "Guerreros Del Bose",
+    "artista": "Soda Stereo",
+    "precio_clp": 7500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-104.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-105",
+    "nombre": "Nana Mouskouri",
+    "artista": "Nana Mouskouri",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-105.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-106",
+    "nombre": "Solo",
+    "artista": "Laureano Brizuela",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-106.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-107",
+    "nombre": "Escenas de la Vida Amorosa",
+    "artista": "La Portuaria",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-107.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-108",
+    "nombre": "Navidad con Nana Mouskouri",
+    "artista": "Nana Mouskouri",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-108.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-109",
+    "nombre": "Teatro Herodes de Atenas - Volumen 1",
+    "artista": "Nana Mouskouri",
+    "precio_clp": 6000,
+    "categoria": "cassette",
+    "imagen": "img/CSST-109.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-110",
+    "nombre": "Teatro Herodes de Atenas - Volumen 2",
+    "artista": "Nana Mouskouri",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-110.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-111",
+    "nombre": "2XS",
+    "artista": "Nazareth",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-111.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-112",
+    "nombre": "Jonathan Livingston Seagull (Juan Salvador Gaviota) - Banda Sonora Original",
+    "artista": "Neil Diamond",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-112.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-113",
+    "nombre": "Collection Vol. 2",
+    "artista": "Nat King Cole",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-113.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-114",
+    "nombre": "Michele",
+    "artista": "Michele",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-114.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-115",
+    "nombre": "Los Cuatro Cuartos",
+    "artista": "Los Cuartos",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-115.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-116",
+    "nombre": "Mais",
+    "artista": "Marisa Monte",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-116.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-117",
+    "nombre": "Bajo el signo de Caín",
+    "artista": "Miguel Bosé",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-117.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-118",
+    "nombre": "Magal",
+    "artista": "Magal",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-118.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-119",
+    "nombre": "Plenamente",
+    "artista": "Maria Martha Serra Lima",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-119.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-120",
+    "nombre": "Natusha Re - Mix",
+    "artista": "Natusha",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-120.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-121",
+    "nombre": "Los Perfiles de Neil Diamond",
+    "artista": "Neil Diamond",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-121.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-122",
+    "nombre": "Embrujo",
+    "artista": "Mirelle Mathieu",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-122.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-123",
+    "nombre": "Enamorada",
+    "artista": "Natusha",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-123.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-124",
+    "nombre": "Collection Vol. 1",
+    "artista": "Nat King Cole",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-124.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-125",
+    "nombre": "Lo Mejor de Los Joao",
+    "artista": "Los Joao",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-125.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-126",
+    "nombre": "Luis Gatica",
+    "artista": "Luis Gatica",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-126.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-127",
+    "nombre": "Super Exitos Bailables de Todos los Tiempos",
+    "artista": "La Sonora de Tommy Rey",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-127.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-128",
+    "nombre": "20 Grandes Exitos",
+    "artista": "Germain y sus Angeles Negros",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-128.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-129",
+    "nombre": "Perfidia",
+    "artista": "Los Cuatro Ases",
+    "precio_clp": 6000,
+    "categoria": "cassette",
+    "imagen": "img/CSST-129.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-130",
+    "nombre": "Fiesta Feliz",
+    "artista": "Los Primos",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-130.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-131",
+    "nombre": "Plaza Suite de Martín Plaza",
+    "artista": "Martín Plaza",
+    "precio_clp": 6000,
+    "categoria": "cassette",
+    "imagen": "img/CSST-131.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-132",
+    "nombre": "Myriam Hernández",
+    "artista": "Myriam Hernández",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-132.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-133",
+    "nombre": "Más Canciones",
+    "artista": "Linda Ronstadt",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-133.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-134",
+    "nombre": "A Todo Rock",
+    "artista": "Menudo",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-134.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-135",
+    "nombre": "Greatest Hits of All Times",
+    "artista": "Boney M.",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-135.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-136",
+    "nombre": "Swaye Boneyom",
+    "artista": "The Collection",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-136.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-137",
+    "nombre": "Hey Stoopid",
+    "artista": "Alice Cooper",
+    "precio_clp": 7000,
+    "categoria": "cassette",
+    "imagen": "img/CSST-137.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-138",
+    "nombre": "Gold",
+    "artista": "Boney M.",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-138.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-139",
+    "nombre": "Move to This",
+    "artista": "Cathy Dennis",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-139.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-140",
+    "nombre": "Hombre Civilizado",
+    "artista": "Joe Cocker",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-140.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-141",
+    "nombre": "Quién soy...",
+    "artista": "María Martha",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-141.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-142",
+    "nombre": "Listen Without Prejudice",
+    "artista": "George Michael",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-142.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-143",
+    "nombre": "Everything",
+    "artista": "Bangles",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-143.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-144",
+    "nombre": "Raices",
+    "artista": "Julio Iglesias",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-144.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-145",
+    "nombre": "Gracias a la Vida",
+    "artista": "Mercedes Sosa",
+    "precio_clp": 7500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-145.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-146",
+    "nombre": "Homenaje a Violeta Parra",
+    "artista": "Mercedes Sosa",
+    "precio_clp": 7500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-146.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-147",
+    "nombre": "Sem Limites pra Sonhar",
+    "artista": "Fabio Jr.",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-147.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-148",
+    "nombre": "Canciones para los niños",
+    "artista": "Pierō",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-148.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-149",
+    "nombre": "A Contraluz",
+    "artista": "Luz",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-149.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-150",
+    "nombre": "¿Será Posible El Sur?",
+    "artista": "Mercedes Sosa",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-150.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-151",
+    "nombre": "De la Misma Raiz",
+    "artista": "Los Tucu Tucu",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-151.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-152",
+    "nombre": "Capriccio Russo",
+    "artista": "Luis Cobos",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-152.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-153",
+    "nombre": "Voz de America",
+    "artista": "Little Steven",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-153.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-154",
+    "nombre": "Opera Magna",
+    "artista": "Luis Cobos",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-154.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-155",
+    "nombre": "Los Años Dorados Vol. 1",
+    "artista": "Varios Intérpretes",
+    "precio_clp": 5000,
+    "categoria": "cassette",
+    "imagen": "img/CSST-155.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-156",
+    "nombre": "de Bach a los Beatles",
+    "artista": "Leo Brouwer",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-156.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-157",
+    "nombre": "Aquellos Buenos Tiempos",
+    "artista": "Los Fronterizos",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-157.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-158",
+    "nombre": "Fogaraté",
+    "artista": "Juan Luis Guerra",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-158.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-159",
+    "nombre": "Lola Flores Homenaje",
+    "artista": "Lola Flores",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-159.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-160",
+    "nombre": "El Amor Es Algo Esplendoroso",
+    "artista": "Los Cuatro Ases",
+    "precio_clp": 6000,
+    "categoria": "cassette",
+    "imagen": "img/CSST-160.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-161",
+    "nombre": "Greatest Hits",
+    "artista": "Linda Ronstadt",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-161.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-162",
+    "nombre": "Cañas y Computadoras",
+    "artista": "Jorge Cumbo",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-162.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-163",
+    "nombre": "Tempo d'Italia",
+    "artista": "Luis Cobos",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-163.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-164",
+    "nombre": "It's Alive",
+    "artista": "Jerry Goodman",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-164.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-165",
+    "nombre": "Los Duendes Negros Interpretan a Los Angeles Negros",
+    "artista": "Los Angeles Negros",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-165.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-166",
+    "nombre": "Segundo Romance",
+    "artista": "Luis Miguel",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-166.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-167",
+    "nombre": "Los Hnos. Morales",
+    "artista": "Los Hermanos Morales",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-167.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-168",
+    "nombre": "Plácido Domingo en Chile",
+    "artista": "Plácido Domingo",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-168.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-169",
+    "nombre": "América",
+    "artista": "José Luis Perales",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-169.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-170",
+    "nombre": "Hay un Ganador en Ti",
+    "artista": "Patti LaBelle",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-170.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-171",
+    "nombre": "Rock Classics",
+    "artista": "Peter Hofmann",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-171.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-172",
+    "nombre": "Suite 1700",
+    "artista": "Luis Cobos",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-172.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-173",
+    "nombre": "20 Boleros Inmortales",
+    "artista": "Palmenia Pizarro",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-173.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-174",
+    "nombre": "Bravo Domingo",
+    "artista": "Plácido Domingo",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-174.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-175",
+    "nombre": "Reencuentro con Palmenia Pizarro",
+    "artista": "Palmenia Pizarro",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-175.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-176",
+    "nombre": "Brasil Espectacular",
+    "artista": "Paul Mauriat",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-176.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-177",
+    "nombre": "Parque Henera",
+    "artista": "Parque Herrera",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-177.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-178",
+    "nombre": "Passion",
+    "artista": "José Carreras",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-178.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-179",
+    "nombre": "Paco Ibáñez canta a Pablo Neruda / Cuarteto Cedrón canta a Raúl González Tuñón",
+    "artista": "Paco Ibáñez / Cuarteto Cedrón",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-179.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-180",
+    "nombre": "Heart in Motion",
+    "artista": "Amy Grant",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-180.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-181",
+    "nombre": "Bandido",
+    "artista": "Azúcar Moreno",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-181.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-182",
+    "nombre": "El Insolente",
+    "artista": "Angel Parra",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-182.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-183",
+    "nombre": "Mambo",
+    "artista": "Azúcar Moreno",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-183.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-184",
+    "nombre": "Mi México",
+    "artista": "Ana Gabriel",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-184.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-185",
+    "nombre": "¡A Los Buenos Corridos Norteños!",
+    "artista": "Los Rancheros del Bío-Bío",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-185.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-186",
+    "nombre": "La Borrada",
+    "artista": "Lauriano Alboranda",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-186.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-187",
+    "nombre": "Los Fabulosos Cadillacs",
+    "artista": "Los Fabulosos Cadillacs",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-187.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-188",
+    "nombre": "De Siempre",
+    "artista": "Los Hermanos Bustos",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-188.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-189",
+    "nombre": "Siroco",
+    "artista": "Paco de Lucía",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-189.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-190",
+    "nombre": "Buenos Días América",
+    "artista": "Pablo Milanes",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-190.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-191",
+    "nombre": "Para mi... es la música",
+    "artista": "Paolo Salvatore",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-191.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-192",
+    "nombre": "Boleros Inmortales Vol. 2",
+    "artista": "Palmenia Pizarro",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-192.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-193",
+    "nombre": "Sus más grandes éxitos (Nuevas versiones)",
+    "artista": "Palmenia Pizarro",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-193.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-194",
+    "nombre": "Classical",
+    "artista": "Nana Mouskouri",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-194.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-195",
+    "nombre": "Hay Amores... Y Amores",
+    "artista": "Pimpinela",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-195.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-196",
+    "nombre": "Romántica Ciudad",
+    "artista": "Osvaldo Berlingieri",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-196.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-197",
+    "nombre": "Exitos de Oro",
+    "artista": "Pedro Messone",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-197.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-198",
+    "nombre": "Más Allá",
+    "artista": "Jairo",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-198.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-199",
+    "nombre": "Flag",
+    "artista": "James Taylor",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-199.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-200",
+    "nombre": "Te Amo Solo a Ti",
+    "artista": "Pio Altamirano",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-200.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-201",
+    "nombre": "No Vote Por Mi 1",
+    "artista": "Coco Legrand",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-201.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-202",
+    "nombre": "No Vote por mi 2",
+    "artista": "Coco Legrand",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-202.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-203",
+    "nombre": "A Través de Tus Ojos",
+    "artista": "Los Bukis",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-203.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-204",
+    "nombre": "Alberto Rey y su Arpa vol.2",
+    "artista": "Alberto Rey y su Arpa",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-204.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-205",
+    "nombre": "Andrea de Boca",
+    "artista": "Andrea",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-205.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-206",
+    "nombre": "Piel Canela",
+    "artista": "Angela Carrasco",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-206.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-207",
+    "nombre": "Intimamente Bailable",
+    "artista": "Band of Gold",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-207.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-208",
+    "nombre": "Punta y Rap",
+    "artista": "Bredda",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-208.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-209",
+    "nombre": "Los Grandes Éxitos de Brenda Lee",
+    "artista": "Brenda Lee",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-209.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-210",
+    "nombre": "Sus Primeros Exitos",
+    "artista": "Bee Gees",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-210.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-211",
+    "nombre": "Benny Goodman Sextet",
+    "artista": "Benny Goodman",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-211.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-212",
+    "nombre": "Bailarina Privada",
+    "artista": "Tina Turner",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-212.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-213",
+    "nombre": "Prontauro",
+    "artista": "Isabel Aldunate",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-213.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-214",
+    "nombre": "Te Amo",
+    "artista": "Andrea Del Boca",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-214.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-215",
+    "nombre": "En Alemania",
+    "artista": "Ángel Parra",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-215.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-216",
+    "nombre": "La Magia de Atahualpa Yupanqui",
+    "artista": "Atahualpa Yupanqui",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-216.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-217",
+    "nombre": "Alberto Rey y su Arpa",
+    "artista": "Alberto Rey y su Arpa",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-217.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-218",
+    "nombre": "El Combo Caribe con Armando Hernández",
+    "artista": "Armando Hernández",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-218.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-219",
+    "nombre": "Grandes Éxitos",
+    "artista": "Amanda Miguel",
+    "precio_clp": 6000,
+    "categoria": "cassette",
+    "imagen": "img/CSST-219.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-220",
+    "nombre": "Trompeta Maravillosa",
+    "artista": "Arturo Sandoval",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-220.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-221",
+    "nombre": "Melodías para ti Nº 3",
+    "artista": "André y su conjunto",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-221.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-222",
+    "nombre": "Mientras Existas Tú",
+    "artista": "Armando Manzanero",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-222.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-223",
+    "nombre": "Tiempo de Recordar",
+    "artista": "Los Quincheros",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-223.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-224",
+    "nombre": "Simples Placeres",
+    "artista": "Bobby McFerrin",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-224.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-225",
+    "nombre": "16 Most Requested Songs",
+    "artista": "Andy Williams",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-225.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-226",
+    "nombre": "Концерт (Concierto - Live in Leningrad)",
+    "artista": "Billy Joel",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-226.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-227",
+    "nombre": "Greatest Hits",
+    "artista": "Blood, Sweat & Tears",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-227.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-228",
+    "nombre": "Eres Diferente y Quince Éxitos",
+    "artista": "Arturo Millán",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-228.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-229",
+    "nombre": "Cada loco con su tema",
+    "artista": "Serrat",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-229.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-230",
+    "nombre": "El Rodeo",
+    "artista": "Los Huasos Quincheros",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-230.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-231",
+    "nombre": "Incomparable",
+    "artista": "Lucho Barrios",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-231.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-232",
+    "nombre": "En Vivo",
+    "artista": "Peter Gabriel",
+    "precio_clp": 7500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-232.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-233",
+    "nombre": "Carmina Burana",
+    "artista": "Carl Orff",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-233.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-234",
+    "nombre": "Off the Ground",
+    "artista": "Paul McCartney",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-234.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-235",
+    "nombre": "Vamos a la Playa",
+    "artista": "Los Joao",
+    "precio_clp": 5000,
+    "categoria": "cassette",
+    "imagen": "img/CSST-235.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-236",
+    "nombre": "Transparencia",
+    "artista": "Paul Mauriat",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-236.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-237",
+    "nombre": "Tal Como Éramos",
+    "artista": "Pequeña Compañía",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-237.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-238",
+    "nombre": "Echoes of London",
+    "artista": "John Williams",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-238.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-239",
+    "nombre": "Filín 249 - 21 Boleros Estelares de Cuba",
+    "artista": "Pablo Ulloa",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-239.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-240",
+    "nombre": "You and Me (We Wanted It All)",
+    "artista": "Frank Sinatra",
+    "precio_clp": 6500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-240.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-241",
+    "nombre": "Gala Lírica desde Sevilla",
+    "artista": "Placido Domingo, Montserrat Caballé, Alfredo Kraus, Teresa Berganza, Jose Carreras, Juan Pons, Pilar Lorengar, Jaime Aragall, Pedro Lavirgen",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-241.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-242",
+    "nombre": "En Vivo",
+    "artista": "Soledad Bravo",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-242.webp",
+    "estado": "disponible"
+  },
+  {
+    "id": "CSST-243",
+    "nombre": "20 Grandes Exitos de Todos los Tiempos",
+    "artista": "Amoeba Tanda",
+    "precio_clp": 5500,
+    "categoria": "cassette",
+    "imagen": "img/CSST-243.webp",
     "estado": "disponible"
   }
 ]
