@@ -269,9 +269,10 @@ const crearTarjetaProducto = (producto) => {
   });
 
   if (producto.estado === 'vendido') {
+    tarjeta.classList.add('vendido');
     const etiqueta = document.createElement('span');
     etiqueta.className = 'etiqueta-vendido';
-    etiqueta.textContent = 'Vendido';
+    etiqueta.textContent = 'VENDIDO';
     tarjeta.appendChild(etiqueta);
   }
 

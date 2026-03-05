@@ -277,16 +277,34 @@ body.carrito-abierto .carrito-overlay {
   box-shadow: 0 12px 24px rgba(126, 240, 0, 0.25);
 }
 
+.tarjeta.vendido {
+  opacity: 0.55;
+  filter: grayscale(80%);
+  pointer-events: none;
+}
+
+.tarjeta.vendido button {
+  pointer-events: none;
+}
+
 .etiqueta-vendido {
   position: absolute;
-  top: 12px;
-  right: 12px;
-  background: #e21d2b;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-30deg);
+  background: rgba(226, 29, 43, 0.92);
   color: #fff;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
-  border-radius: 999px;
-  letter-spacing: 0.03em;
+  padding: 0.4rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  border: 3px solid #fff;
+  border-radius: 4px;
+  white-space: nowrap;
+  z-index: 2;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+  pointer-events: none;
 }
 
 .sin-resultados,
