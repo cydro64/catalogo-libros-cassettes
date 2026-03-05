@@ -255,28 +255,16 @@ body.carrito-abierto .carrito-overlay {
 
 #productos {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 1.5rem;
   padding: 0 1.5rem 2.5rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-@media (max-width: 1024px) {
-  #productos {
-    gap: 1.25rem;
-  }
-}
-
-@media (max-width: 900px) {
-  #productos {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
 @media (max-width: 768px) {
   #productos {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 1.1rem;
     padding: 0 1.1rem 2.25rem;
   }
