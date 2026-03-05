@@ -25,9 +25,9 @@ body {
   min-height: 100vh;
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 820px) {
   body {
-    padding-right: min(420px, 34vw);
+    padding-right: min(380px, 34vw);
   }
 
   #toggle-carrito {
@@ -40,6 +40,7 @@ body {
 
   #carrito {
     transform: translateX(0);
+    width: min(380px, 34vw);
   }
 
   .carrito-cerrar {
@@ -58,7 +59,7 @@ header {
   z-index: 80;
 }
 
-@media (max-width: 1099px) {
+@media (max-width: 819px) {
   header {
     padding: 0.6rem 1rem;
   }
