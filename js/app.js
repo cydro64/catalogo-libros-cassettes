@@ -21,6 +21,8 @@ const formatoPrecio = new Intl.NumberFormat('es-CL', {
 let productos = [];
 let categoriaSeleccionada = 'todas';
 let terminoBusqueda = '';
+let paginaActual = 1;
+const PRODUCTOS_POR_PAGINA = 40;
 
 const normalizarCategoria = (categoria = '') => {
   const categoriaNormalizada = normalizarTexto(categoria);
@@ -58,6 +60,7 @@ const crearFiltroUI = (categorias) => {
   buscador.placeholder = 'Buscar por nombre o descripción';
   buscador.addEventListener('input', (event) => {
     terminoBusqueda = normalizarTexto(event.target.value);
+    paginaActual = 1;
     renderProductos();
   });
 
@@ -76,6 +79,7 @@ const crearFiltroUI = (categorias) => {
     boton.className = categoria === categoriaSeleccionada ? 'activo' : '';
     boton.addEventListener('click', () => {
       categoriaSeleccionada = categoria;
+      paginaActual = 1;
       document
         .querySelectorAll('.filtros-categorias button')
         .forEach((btn) => btn.classList.remove('activo'));
@@ -281,6 +285,32 @@ const crearTarjetaProducto = (producto) => {
   return tarjeta;
 };
 
+const renderPaginacion = (totalFiltrados) => {
+  let paginacion = document.getElementById('paginacion');
+  if (!paginacion) {
+    paginacion = document.createElement('div');
+    paginacion.id = 'paginacion';
+    productosContainer.parentNode.insertBefore(paginacion, productosContainer.nextSibling);
+  }
+  paginacion.innerHTML = '';
+
+  const totalPaginas = Math.ceil(totalFiltrados / PRODUCTOS_POR_PAGINA);
+  if (totalPaginas <= 1) return;
+
+  for (let i = 1; i <= totalPaginas; i++) {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.textContent = i;
+    btn.className = 'pagina-btn' + (i === paginaActual ? ' activa' : '');
+    btn.addEventListener('click', () => {
+      paginaActual = i;
+      renderProductos();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    paginacion.appendChild(btn);
+  }
+};
+
 const renderProductos = () => {
   productosContainer.innerHTML = '';
   const filtrados = filtrarProductos();
@@ -290,12 +320,18 @@ const renderProductos = () => {
     mensaje.className = 'sin-resultados';
     mensaje.textContent = 'No hay productos que coincidan con la búsqueda.';
     productosContainer.appendChild(mensaje);
+    renderPaginacion(0);
     return;
   }
 
-  filtrados
+  const inicio = (paginaActual - 1) * PRODUCTOS_POR_PAGINA;
+  const pagina = filtrados.slice(inicio, inicio + PRODUCTOS_POR_PAGINA);
+
+  pagina
     .map((producto) => crearTarjetaProducto(producto))
     .forEach((tarjeta) => productosContainer.appendChild(tarjeta));
+
+  renderPaginacion(filtrados.length);
 };
 
 const cargarProductos = async () => {
