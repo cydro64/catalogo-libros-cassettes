@@ -10,6 +10,8 @@ const cerrarCarritoBtn = document.getElementById('cerrar-carrito');
 const carritoOverlay = document.getElementById('carrito-overlay');
 const carritoCount = document.getElementById('carrito-count');
 const carritoAside = document.getElementById('carrito');
+const totalProductos = document.getElementById('total-productos');
+const totalFiltrados = document.getElementById('total-filtrados');
 const mediaQueryCarritoFijo = window.matchMedia('(min-width: 1100px)');
 
 const formatoPrecio = new Intl.NumberFormat('es-CL', {
@@ -22,6 +24,7 @@ let productos = [];
 let categoriaSeleccionada = 'todas';
 let terminoBusqueda = '';
 let paginaActual = 1;
+let ordenSeleccionado = 'nombre-asc';
 const PRODUCTOS_POR_PAGINA = 40;
 
 const normalizarCategoria = (categoria = '') => {
@@ -64,6 +67,34 @@ const crearFiltroUI = (categorias) => {
     renderProductos();
   });
 
+  const controlesContainer = document.createElement('div');
+  controlesContainer.className = 'controles-catalogo';
+
+  const ordenLabel = document.createElement('label');
+  ordenLabel.textContent = 'Ordenar';
+  ordenLabel.htmlFor = 'orden-productos';
+
+  const ordenSelect = document.createElement('select');
+  ordenSelect.id = 'orden-productos';
+  [
+    ['nombre-asc', 'Nombre A-Z'],
+    ['precio-asc', 'Precio menor a mayor'],
+    ['precio-desc', 'Precio mayor a menor'],
+  ].forEach(([value, text]) => {
+    const option = document.createElement('option');
+    option.value = value;
+    option.textContent = text;
+    ordenSelect.appendChild(option);
+  });
+  ordenSelect.value = ordenSeleccionado;
+  ordenSelect.addEventListener('change', (event) => {
+    ordenSeleccionado = event.target.value;
+    paginaActual = 1;
+    renderProductos();
+  });
+
+  controlesContainer.append(buscador, ordenLabel, ordenSelect);
+
   const filtrosContainer = document.createElement('div');
   filtrosContainer.className = 'filtros-categorias';
 
@@ -90,11 +121,25 @@ const crearFiltroUI = (categorias) => {
   });
 
   botones.forEach((boton) => filtrosContainer.appendChild(boton));
-  filtrosSection.append(titulo, buscador, filtrosContainer);
+  filtrosSection.append(titulo, controlesContainer, filtrosContainer);
 };
 
+const obtenerNombreProducto = (producto) =>
+  [producto.artista || producto.autor, producto.nombre].filter(Boolean).join(' — ');
+
+const ordenarProductos = (lista) =>
+  [...lista].sort((a, b) => {
+    if (ordenSeleccionado === 'precio-asc') {
+      return (a.precio_clp ?? 0) - (b.precio_clp ?? 0);
+    }
+    if (ordenSeleccionado === 'precio-desc') {
+      return (b.precio_clp ?? 0) - (a.precio_clp ?? 0);
+    }
+    return obtenerNombreProducto(a).localeCompare(obtenerNombreProducto(b), 'es');
+  });
+
 const filtrarProductos = () =>
-  productos.filter((producto) => {
+  ordenarProductos(productos.filter((producto) => {
     const coincideCategoria =
       categoriaSeleccionada === 'todas' ||
       normalizarCategoria(producto.categoria) === categoriaSeleccionada;
@@ -113,7 +158,7 @@ const filtrarProductos = () =>
     );
     const coincideBusqueda = textoBusqueda.includes(terminoBusqueda);
     return coincideCategoria && coincideBusqueda;
-  });
+  }));
 
 const construirDetalleCarrito = () => {
   if (!window.carritoManager) {
@@ -232,10 +277,17 @@ const crearTarjetaProducto = (producto) => {
   tarjeta.dataset.id = producto.id;
   const imagen = document.createElement('img');
   imagen.src = producto.imagen;
-  imagen.alt = producto.nombre;
+  imagen.alt = `Foto de ${producto.nombre}`;
+  imagen.loading = 'lazy';
+  imagen.decoding = 'async';
+  imagen.addEventListener('error', () => {
+    imagen.src = normalizarCategoria(producto.categoria) === 'cassettes'
+      ? 'img/cassette-placeholder.svg'
+      : 'img/libro-placeholder.svg';
+  }, { once: true });
 
   const titulo = document.createElement('h3');
-  titulo.textContent = `${producto.artista} — ${producto.nombre}`;
+  titulo.textContent = obtenerNombreProducto(producto);
 
   const precio = document.createElement('p');
   precio.textContent = formatoPrecio.format(producto.precio_clp);
@@ -266,7 +318,7 @@ const crearTarjetaProducto = (producto) => {
     }
     window.carritoManager.agregarProducto(
       producto.id,
-      `${producto.artista ?? ''}${producto.artista ? ' — ' : ''}${producto.nombre}`,
+      obtenerNombreProducto(producto),
       producto.precio_clp,
     );
     actualizarEstadoBoton();
@@ -314,6 +366,13 @@ const renderPaginacion = (totalFiltrados) => {
 const renderProductos = () => {
   productosContainer.innerHTML = '';
   const filtrados = filtrarProductos();
+
+  if (totalProductos) {
+    totalProductos.textContent = `${productos.length} productos cargados`;
+  }
+  if (totalFiltrados) {
+    totalFiltrados.textContent = `${filtrados.length} visibles`;
+  }
 
   if (filtrados.length === 0) {
     const mensaje = document.createElement('p');

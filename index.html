@@ -11,7 +11,7 @@
     </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Catálogo de Libros y Cassettes</title>
+    <title>Catálogo de Libros y Cassettes en venta | Santiago</title>
     <meta
       name="description"
       content="Explora el catálogo de libros y cassettes disponibles, filtra por categoría y arma tu pedido en minutos."
@@ -22,7 +22,7 @@
       content="Explora el catálogo de libros y cassettes disponibles, filtra por categoría y arma tu pedido en minutos."
     />
     <meta property="og:image" content="img/CSST-001.webp" />
-    <meta property="og:url" content="/catalogo-libros-cassettes/" />
+    <meta property="og:url" content="https://cydro64.github.io/catalogo-libros-cassettes/" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Catálogo de Libros y Cassettes" />
@@ -53,6 +53,16 @@
         </div>
       </div>
     </header>
+    <main>
+      <section class="hero-catalogo" aria-labelledby="catalogo-titulo">
+        <p class="eyebrow">Material disponible para venta directa</p>
+        <h2 id="catalogo-titulo">Cassettes y libros seleccionados</h2>
+        <p>Busca, filtra y arma tu pedido. La compra se confirma por WhatsApp para coordinar disponibilidad, entrega y pago.</p>
+        <div class="catalogo-resumen" aria-live="polite">
+          <span id="total-productos">Catálogo cargando…</span>
+          <span id="total-filtrados"></span>
+        </div>
+      </section>
     <div id="carrito-overlay" class="carrito-overlay" hidden></div>
     <section id="filtros">
       <h2>Filtros por categoría</h2>
@@ -82,6 +92,7 @@
     </aside>
     <script src="js/carritoManager.js"></script>
     <script src="js/order.js"></script>
+    </main>
     <script src="js/app.js"></script>
   </body>
 </html>
