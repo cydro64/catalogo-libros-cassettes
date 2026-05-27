@@ -1,0 +1,11 @@
+# Archivos locales de promoción/render
+promo/
+tools/
+
+# Perfiles y temporales de navegador
+chrome-*/
+frames-*/
+
+# Sistema
+.DS_Store
+Thumbs.db
