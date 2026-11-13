@@ -68,6 +68,7 @@ const renderCheckout = () => {
     });
     if (window.generarMensajeWhatsApp) {
       const detalle = items.map((item) => ({
+        id: item.id,
         nombre: item.nombre ?? 'Producto',
         cantidad: item.cantidad,
         precio_clp: item.precio ?? 0,

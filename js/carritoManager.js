@@ -139,6 +139,19 @@ class CarritoManager {
     return this.obtenerCarrito();
   }
 
+  // Saca el producto entero (todas sus unidades). Lo usa app.js cuando algo ya se vendió o se reservó.
+  quitarTodo(id) {
+    const antes = this.items.length;
+    this.items = this.items.filter((producto) => producto.id !== id);
+    if (this.items.length === antes) {
+      return this.obtenerCarrito();
+    }
+    this.actualizarTotales();
+    this.guardarCarrito();
+    this.notificarCambios();
+    return this.obtenerCarrito();
+  }
+
   vaciarCarrito() {
     this.items = [];
     this.actualizarTotales();

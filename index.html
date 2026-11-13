@@ -11,34 +11,41 @@
     </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Catálogo de Libros y Cassettes en venta | Santiago</title>
+    <meta name="theme-color" content="#000000" />
+    <title>Cassettes originales en venta | Santiago, Chile</title>
     <meta
       name="description"
-      content="Explora el catálogo de libros y cassettes disponibles, filtra por categoría y arma tu pedido en minutos."
+      content="Catálogo de cassettes originales en venta: busca por artista, arma tu pedido y envíalo por WhatsApp. Entrega en Metro Lo Vial / San Miguel o Starken a todo Chile."
     />
-    <meta property="og:title" content="Catálogo de Libros y Cassettes" />
+    <link rel="canonical" href="https://cydro64.github.io/catalogo-libros-cassettes/" />
+    <meta property="og:title" content="Cassettes originales en venta" />
     <meta
       property="og:description"
-      content="Explora el catálogo de libros y cassettes disponibles, filtra por categoría y arma tu pedido en minutos."
+      content="Busca por artista, arma tu pedido y envíalo por WhatsApp. Entrega en Metro Lo Vial / San Miguel o Starken a todo Chile."
     />
-    <meta property="og:image" content="img/CSST-001.webp" />
+    <meta property="og:image" content="https://cydro64.github.io/catalogo-libros-cassettes/img/compartir.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:url" content="https://cydro64.github.io/catalogo-libros-cassettes/" />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_CL" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Catálogo de Libros y Cassettes" />
+    <meta name="twitter:title" content="Cassettes originales en venta" />
     <meta
       name="twitter:description"
-      content="Explora el catálogo de libros y cassettes disponibles, filtra por categoría y arma tu pedido en minutos."
+      content="Busca por artista, arma tu pedido y envíalo por WhatsApp."
     />
-    <meta name="twitter:image" content="img/CSST-001.webp" />
+    <meta name="twitter:image" content="https://cydro64.github.io/catalogo-libros-cassettes/img/compartir.jpg" />
+    <link rel="preload" href="fuentes/JetBrainsMono.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
       <div class="header-content">
-        <h1>Catálogo Libros y Cassettes</h1>
+        <h1>Catálogo Cassettes</h1>
         <div class="header-botones">
-          <a href="flyer.html" class="boton-flyer" target="_blank">📢 Publicidad</a>
+          <a href="flyer.html" class="boton-flyer" target="_blank" rel="noopener" data-medir="flyer">Flyer</a>
+          <a href="https://www.facebook.com/CassettesyCd" class="boton-flyer" target="_blank" rel="noopener" data-medir="facebook">Facebook</a>
           <button
             id="toggle-carrito"
             class="cart-toggle"
@@ -46,31 +53,30 @@
             aria-controls="carrito"
             aria-expanded="false"
           >
-            <span class="cart-icon" aria-hidden="true">🛒</span>
-            <span class="cart-text">Carrito</span>
-            <span id="carrito-count" class="cart-badge" aria-label="Artículos en el carrito">0</span>
+            <span class="cart-text">Pedido</span>
+            <span id="carrito-count" class="cart-badge" aria-label="Productos en el pedido">0</span>
           </button>
         </div>
       </div>
     </header>
     <main>
       <section class="hero-catalogo" aria-labelledby="catalogo-titulo">
-        <p class="eyebrow">Material disponible para venta directa</p>
-        <h2 id="catalogo-titulo">Cassettes y libros seleccionados</h2>
-        <p>Busca, filtra y arma tu pedido. La compra se confirma por WhatsApp para coordinar disponibilidad, entrega y pago.</p>
+        <p class="eyebrow">Venta directa · Santiago</p>
+        <h2 id="catalogo-titulo">Cassettes originales</h2>
+        <p>Busca, elige y envía tu pedido por WhatsApp. Ahí coordinamos la entrega (Metro Línea 2 Lo Vial / San Miguel, o Starken a todo Chile) y el pago.</p>
         <div class="catalogo-resumen" aria-live="polite">
-          <span id="total-productos">Catálogo cargando…</span>
+          <span id="total-productos">Cargando catálogo…</span>
           <span id="total-filtrados"></span>
         </div>
+        <div id="aviso-catalogo" class="aviso-catalogo" role="status" hidden></div>
       </section>
+      <section id="filtros" aria-label="Buscar y filtrar"></section>
+      <div id="productos"></div>
+    </main>
     <div id="carrito-overlay" class="carrito-overlay" hidden></div>
-    <section id="filtros">
-      <h2>Filtros por categoría</h2>
-    </section>
-    <div id="productos"></div>
-    <aside id="carrito" aria-hidden="true">
+    <aside id="carrito" aria-label="Tu pedido">
       <div class="carrito-header">
-        <h2>Pedido</h2>
+        <h2>Tu pedido</h2>
         <button id="cerrar-carrito" class="carrito-cerrar" type="button">Cerrar</button>
       </div>
       <ul id="lista-carrito"></ul>
@@ -85,14 +91,14 @@
           rel="noopener"
         >
           <img src="img/whatsapp.svg" alt="" class="icono-whatsapp" aria-hidden="true" />
-          Enviar pedido por WhatsApp al vendedor
+          Enviar pedido por WhatsApp
         </a>
       </div>
       <p id="carrito-error" class="error"></p>
+      <p class="carrito-nota">Se abre WhatsApp con tu pedido ya escrito. Nada se cobra en esta página.</p>
     </aside>
     <script src="js/carritoManager.js"></script>
     <script src="js/order.js"></script>
-    </main>
     <script src="js/app.js"></script>
   </body>
 </html>
