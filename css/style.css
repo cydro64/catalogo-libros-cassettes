@@ -481,16 +481,20 @@ li.item-carrito.animar-salida { opacity: 0; transform: translateX(8px); }
   justify-content: center;
   gap: 8px;
   padding: 9px 16px;
+  border: 1px solid rgba(68, 214, 44, .45);
   border-radius: 999px;
-  background: var(--acento);
-  color: #000;
+  background: rgba(68, 214, 44, .1);
+  color: var(--texto);
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 700;
   text-align: center;
+  transition: background .15s, border-color .15s;
 }
 
-.boton-whatsapp:hover { background: #5ae644; text-decoration: none; }
-.boton-whatsapp.deshabilitado { background: var(--suave); color: var(--apagado); pointer-events: none; }
+/* Botón sobrio: fondo oscuro con borde verde, sin el verde fosforescente de relleno (pedido de Victor, 13-11). */
+.boton-whatsapp:hover { background: rgba(68, 214, 44, .18); border-color: var(--acento); text-decoration: none; }
+.boton-whatsapp.deshabilitado { border-color: var(--borde); background: var(--suave); color: var(--apagado); pointer-events: none; }
+.boton-whatsapp.deshabilitado .icono-whatsapp { filter: grayscale(1) opacity(.5); }
 .icono-whatsapp { width: 18px; height: 18px; }
 
 .carrito-nota { margin: 14px 0 0; font-size: 11px; color: var(--apagado); }
