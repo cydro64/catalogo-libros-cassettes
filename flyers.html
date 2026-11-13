@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2DQS7XHSHK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-2DQS7XHSHK');
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>Flyers | Cassettes originales en venta</title>
+    <meta name="description" content="Selecciones de cassettes originales en venta. Toca un flyer para ver esos cassettes en el catálogo y pedirlos por WhatsApp." />
+    <link rel="canonical" href="https://cydro64.github.io/catalogo-libros-cassettes/flyers.html" />
+    <meta property="og:title" content="Flyers · Cassettes originales en venta" />
+    <meta property="og:description" content="Selecciones de cassettes originales. Toca un flyer para ver esos cassettes y pedirlos por WhatsApp." />
+    <meta property="og:image" content="https://cydro64.github.io/catalogo-libros-cassettes/img/compartir.jpg" />
+    <meta property="og:url" content="https://cydro64.github.io/catalogo-libros-cassettes/flyers.html" />
+    <meta property="og:type" content="website" />
+    <link rel="preload" href="fuentes/JetBrainsMono.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      /* Galería de flyers (13-11-2026). Los flyers los publica la app Cassettes: img/flyers/ + data/flyers.json. */
+      .galeria-flyers { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; margin-top: 26px; }
+      .flyer { display: flex; flex-direction: column; overflow: hidden; border: 1px solid var(--borde); border-radius: var(--radio); background: var(--tarjeta); }
+      .flyer:hover { border-color: rgba(68, 214, 44, .35); }
+      .flyer a.imagen { display: block; background: #050505; }
+      .flyer img { display: block; width: 100%; height: auto; }
+      .flyer .info { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; padding: 12px 14px 14px; }
+      .flyer h3 { flex: 1 1 100%; margin: 0; font-size: 13px; }
+      .flyer .fecha { font-size: 11px; color: var(--apagado); }
+      .flyer .ver { margin-left: auto; padding: 5px 14px; border: 1px solid rgba(68, 214, 44, .45); border-radius: 999px; background: rgba(68, 214, 44, .1); color: var(--texto); font-size: 12px; font-weight: 700; }
+      .flyer .ver:hover { border-color: var(--acento); text-decoration: none; }
+      body { padding-right: 0 !important; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>Catálogo Cassettes</h1>
+        <div class="header-botones">
+          <a href="index.html" class="boton-flyer" data-medir="catalogo">Catálogo</a>
+          <a href="https://www.facebook.com/CassettesyCd" class="boton-flyer" target="_blank" rel="noopener" data-medir="facebook">Facebook</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero-catalogo">
+        <p class="eyebrow">Selecciones · Santiago</p>
+        <h2>Flyers</h2>
+        <p>Toca un flyer para ver esos cassettes en el catálogo y pedirlos por WhatsApp.</p>
+      </section>
+      <div id="galeria" class="galeria-flyers" aria-live="polite"></div>
+    </main>
+    <script>
+      // Lee data/flyers.json ({ archivo, titulo, fecha, ids }) y arma la galería. Sin flyers, invita al catálogo.
+      (async () => {
+        const galeria = document.getElementById('galeria');
+        const medir = (evento, datos) => { try { if (typeof window.gtag === 'function') window.gtag('event', evento, datos); } catch (e) { /* nunca romper la página */ } };
+        const CODIGO = /^[A-Z]{3,5}-\d{3,}$/;
+        const vacio = (texto) => {
+          galeria.innerHTML = '';
+          const p = document.createElement('p');
+          p.className = 'sin-resultados';
+          p.append(texto + ' ');
+          const a = document.createElement('a');
+          a.href = 'index.html';
+          a.textContent = 'Ver el catálogo';
+          p.appendChild(a);
+          galeria.appendChild(p);
+        };
+        let flyers = [];
+        try {
+          const r = await fetch('data/flyers.json', { cache: 'no-cache' });
+          if (r.ok) flyers = await r.json();
+        } catch (e) { /* sin lista: queda vacía */ }
+        if (!Array.isArray(flyers) || flyers.length === 0) { vacio('Todavía no hay flyers publicados.'); return; }
+        flyers.forEach((f) => {
+          if (!f || typeof f.archivo !== 'string') return;
+          const ids = (Array.isArray(f.ids) ? f.ids : []).filter((id) => CODIGO.test(id));
+          const campana = f.archivo.replace(/\.jpg$/i, '').replace(/[^A-Za-z0-9-]+/g, '-').slice(0, 60);
+          const q = new URLSearchParams();
+          if (ids.length) q.set('ver', ids.join(','));
+          q.set('utm_source', 'web'); q.set('utm_medium', 'flyers'); q.set('utm_campaign', campana);
+          const destino = 'index.html?' + q.toString().replace(/%2C/g, ',');
+
+          const tarjeta = document.createElement('article');
+          tarjeta.className = 'flyer';
+          const enlace = document.createElement('a');
+          enlace.className = 'imagen';
+          enlace.href = destino;
+          const img = document.createElement('img');
+          img.src = 'img/flyers/' + encodeURIComponent(f.archivo);
+          img.alt = f.titulo || 'Flyer de cassettes';
+          img.loading = 'lazy';
+          enlace.appendChild(img);
+          const info = document.createElement('div');
+          info.className = 'info';
+          const h3 = document.createElement('h3');
+          h3.textContent = f.titulo || 'Cassettes';
+          const fecha = document.createElement('span');
+          fecha.className = 'fecha';
+          const d = new Date(f.fecha);
+          fecha.textContent = isNaN(d) ? '' : d.toLocaleDateString('es-CL', { day: 'numeric', month: 'long', year: 'numeric' });
+          const ver = document.createElement('a');
+          ver.className = 'ver';
+          ver.href = destino;
+          ver.textContent = ids.length ? `Ver ${ids.length === 1 ? 'el cassette' : `los ${ids.length} cassettes`}` : 'Ver el catálogo';
+          info.append(h3, fecha, ver);
+          tarjeta.append(enlace, info);
+          [enlace, ver].forEach((a) => a.addEventListener('click', () => medir('select_content', { content_type: 'flyer', content_id: f.archivo })));
+          galeria.appendChild(tarjeta);
+        });
+        medir('ver_flyers', { cantidad: flyers.length });
+      })();
+    </script>
+  </body>
+</html>

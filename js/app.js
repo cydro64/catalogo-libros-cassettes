@@ -750,5 +750,21 @@ document.addEventListener('click', (event) => {
   }
 });
 
+// El enlace "Flyers" aparece solo si la app Cassettes publicó alguno (data/flyers.json).
+const mostrarEnlaceFlyers = async () => {
+  const enlace = document.getElementById('enlace-flyers');
+  if (!enlace) {
+    return;
+  }
+  try {
+    const r = await fetch('data/flyers.json', { cache: 'no-cache' });
+    const flyers = r.ok ? await r.json() : [];
+    enlace.hidden = !(Array.isArray(flyers) && flyers.length > 0);
+  } catch (error) {
+    enlace.hidden = true;
+  }
+};
+
 prepararCarrito();
 cargarProductos();
+mostrarEnlaceFlyers();
